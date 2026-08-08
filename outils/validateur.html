@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Validateur de factures électroniques (Factur-X, UBL, CII) — FactuSerein</title>
-  <meta name="description" content="Validez gratuitement vos factures électroniques : structure, conformité EN16931 et règles françaises. Factur-X, UBL, CII, CDAR. Le validateur en ligne arrive — inscrivez-vous pour être prévenu.">
+  <title>Vérifier une facture électronique — FactuSerein</title>
+  <meta name="description" content="Vérifiez gratuitement les informations de votre facture PDF avant sa transmission électronique. Un résultat simple, sans jargon.">
   <link rel="stylesheet" href="../assets/css/style.css">
 </head>
 <body>
@@ -26,7 +26,7 @@
 <section class="page-titre">
   <div class="container">
     <h1>Validateur de factures électroniques</h1>
-    <p>Vérifiez qu'un fichier Factur-X, UBL ou CII est conforme avant transmission : structure XML, profil déclaré, règles EN16931 et règles françaises. Gratuit, sans inscription.</p>
+    <p>Vérifiez les informations de votre facture PDF avant sa transmission électronique. Gratuit, sans inscription et expliqué en langage clair.</p>
   </div>
 </section>
 
@@ -35,8 +35,8 @@
     <div id="js-zone-depot" class="zone-depot" role="button" tabindex="0" aria-label="Déposer un fichier">
       <div class="gros">📄</div>
       <p><strong>Déposez votre fichier ici</strong> ou cliquez pour parcourir</p>
-      <p class="entretien">PDF Factur-X (.pdf), XML UBL ou CII (.xml) — 10 Mo maximum</p>
-      <input type="file" id="js-fichier" accept=".pdf,.xml" style="display:none">
+      <p class="entretien">Facture PDF — 10 Mo maximum</p>
+      <input type="file" id="js-fichier" accept=".pdf" style="display:none">
     </div>
     <p id="js-statut-upload" class="marge entretien"></p>
 
@@ -48,15 +48,15 @@
     <div class="grille grille-3">
       <div class="carte">
         <h3>Structure</h3>
-        <p>Le fichier est-il bien un PDF Factur-X (XML embarqué) ou un XML UBL/CII valide ? Profil détecté : MINIMUM, BASIC WL, BASIC, EN 16931, EXTENDED.</p>
+        <p>Les informations essentielles sont-elles présentes et cohérentes ? Le résultat vous indique les corrections à effectuer avant transmission.</p>
       </div>
       <div class="carte">
         <h3>Conformité EN16931</h3>
-        <p>Règles européennes : champs obligatoires, cohérence des montants, TVA, identification des parties (SIREN, TVA intracommunautaire).</p>
+        <p>Champs importants : entreprise, client, dates, montants et TVA.</p>
       </div>
       <div class="carte">
         <h3>Règles françaises</h3>
-        <p>Règles de gestion additionnelles France (BR-FR) et messages de cycle de vie (CDAR) : transmission, rejet, refus motivé.</p>
+        <p>Règles françaises et messages de suivi expliqués sans vocabulaire technique.</p>
       </div>
     </div>
 
@@ -85,7 +85,7 @@
       <a href="../legal/rgpd.html">Données personnelles (RGPD)</a>
       <a href="mailto:contact@factuserein.com">contact@factuserein.com</a>
     </div>
-    <p class="mentions">© <span class="js-annee">2026</span> FactuSerein — Plateforme agréée partenaire : SUPER PDP.</p>
+    <p class="mentions">© <span class="js-annee">2026</span> FactuSerein — Conçu et accompagné depuis Aix-en-Provence.</p>
   </div>
 </footer>
 

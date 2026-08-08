@@ -13,9 +13,9 @@ Ci-après ensemble « les Parties ».
 ## ARTICLE 1 — OBJET
 
 Le présent contrat définit les conditions de fourniture du service d'abonnement « FactuSerein » qui permet au Client de :
-- déposer ses factures (PDF ou Excel) via un dossier de dépôt / application Windows ;
-- faire convertir ses factures au format officiel de facturation électronique (PDF Factur-X, ou UBL/CII selon les besoins) ;
-- faire transmettre ses factures à ses clients via une plateforme agréée partenaire (SUPER PDP, immatriculée DGFiP) ;
+- déposer ses factures PDF via un dossier de dépôt / application Windows ;
+- faire préparer ses factures selon les règles françaises de facturation électronique ;
+- faire transmettre ses factures à ses clients via une plateforme agréée partenaire ;
 - suivre les statuts de cycle de vie (transmission, réception, rejet, refus) ;
 - bénéficier, selon l'offre souscrite, de la supervision des flux et du traitement des rejets.
 
@@ -56,7 +56,7 @@ Le Client s'engage à :
 ## ARTICLE 6 — RESPONSABILITÉ
 
 1. Le Prestataire met en œuvre une obligation de **moyens**.
-2. La conformité réglementaire des factures transmises repose sur la plateforme agréée partenaire (SUPER PDP, immatriculée DGFiP, certifiée ISO 27001) : le Prestataire n'est pas lui-même une plateforme agréée et n'assure pas la conformité des données saisies par le Client dans ses propres factures (montants, mentions légales, identifiants).
+2. La transmission réglementaire des factures repose sur la plateforme agréée partenaire : le Prestataire n'est pas lui-même une plateforme agréée et n'assure pas l'exactitude des données saisies par le Client dans ses propres factures (montants, mentions légales, identifiants).
 3. Le Client reste responsable du contenu de ses factures (exactitude des montants, mentions obligatoires, TVA) et de sa propre conformité fiscale.
 4. La responsabilité du Prestataire est limitée, pour l'ensemble des réclamations, au montant des sommes effectivement versées par le Client au titre des 12 derniers mois d'abonnement. Ne sont pas couverts : les dommages indirects (perte de chiffre d'affaires, perte de données, préjudice commercial).
 5. Le Prestataire ne garantit pas l'acceptation d'une facture par le destinataire ou son propre système, ni l'absence de rejet (rejets gérés dans le cadre du support / de l'offre Pro).

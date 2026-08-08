@@ -21,13 +21,13 @@
 
 | Question | Réponse |
 |---|---|
-| Outil de facturation utilisé (Excel/Word, logiciel métier — préciser : Grippen, Vega, Popina, Sage, EBP…) | |
+| Outil de facturation utilisé (préciser : Grippen, Vega, Popina, Sage, EBP…) | |
 | Volume mensuel de factures ÉMISES (B2B proches) | |
 | Volume mensuel de factures REÇUES (fournisseurs) | |
 | Part des ventes aux particuliers (B2C) ? | ☐ 0 % ☐ < 50 % ☐ > 50 % |
 | Opérations internationales (export/import UE ou hors UE) ? | ☐ Oui ☐ Non |
 | Le logiciel utilisé est-il une plateforme agréée (immatriculation DGFiP) ? | ☐ Oui ☐ Non ☐ Ne sait pas |
-| Le logiciel exporte-t-il les factures en PDF ou Excel ? | ☐ PDF ☐ Excel ☐ Les deux ☐ Non |
+| Le logiciel permet-il d'exporter les factures en PDF ? | ☐ Oui ☐ Non ☐ À vérifier |
 
 ## C. ÉTAT DE PRÉPARATION
 
