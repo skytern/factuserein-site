@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Devis — FactuConforme</title>
+  <style>
+    body { font-family: system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif; color: #1e293b; max-width: 800px; margin: 0 auto; padding: 32px 24px; font-size: 14px; line-height: 1.5; }
+    header { display: flex; justify-content: space-between; align-items: flex-start; border-bottom: 3px solid #0f2557; padding-bottom: 16px; margin-bottom: 24px; }
+    .brand { font-size: 22px; font-weight: 800; color: #0f2557; }
+    .brand span { color: #16a34a; }
+    h1 { font-size: 20px; color: #0f2557; }
+    h2 { font-size: 16px; color: #0f2557; margin-top: 28px; border-bottom: 1px solid #e2e8f0; padding-bottom: 6px; }
+    table { width: 100%; border-collapse: collapse; margin: 12px 0; }
+    th, td { border: 1px solid #cbd5e1; padding: 8px 10px; text-align: left; }
+    th { background: #f1f5f9; }
+    .total { font-size: 16px; font-weight: 700; }
+    .cadre { border: 1px solid #cbd5e1; border-radius: 8px; padding: 16px; margin: 16px 0; }
+    .small { font-size: 12px; color: #64748b; }
+    .gauche { float: left; } .droite { float: right; }
+    .clear { clear: both; }
+  </style>
+</head>
+<body>
+
+<header>
+  <div>
+    <div class="brand">✓ FactuConforme</div>
+    <div class="small">Entreprise individuelle — SIREN : ______ — TVA : ______<br>
+      Adresse : ______<br>contact@factuconforme.fr</div>
+  </div>
+  <div style="text-align:right">
+    <h1>DEVIS N° FC-2026-___</h1>
+    <div>Date : __/__/2026<br>Valable 30 jours</div>
+  </div>
+</header>
+
+<div class="cadre">
+  <strong>Client</strong><br>
+  Raison sociale : ________________________________<br>
+  SIREN : ______________ — Adresse : ________________________________<br>
+  Contact : ______________________ — Email : ______________________
+</div>
+
+<h2>Prestations proposées</h2>
+<table>
+  <thead>
+    <tr><th>Désignation</th><th>Qté</th><th>PU HT</th><th>Total HT</th></tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Mise en place « Conformité Micro »</strong> — création du compte plateforme agréée, déclaration de la plateforme de réception dans l'annuaire officiel, paramétrage de l'entreprise (SIREN, TVA, mentions), installation de l'application Windows, test d'envoi/réception, formation (30 min)</td>
+      <td>1</td><td>300,00 €</td><td>300,00 €</td>
+    </tr>
+    <tr>
+      <td><em>Option — Migration des factures existantes</em></td>
+      <td>1</td><td><em>______ €</em></td><td><em>______ €</em></td>
+    </tr>
+  </tbody>
+</table>
+
+<h2>Abonnement récurrent</h2>
+<table>
+  <thead>
+    <tr><th>Offre</th><th>Contenu</th><th>Prix mensuel HT</th></tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Conformité Micro</strong> — 29 €/mois</td>
+      <td>Jusqu'à 100 factures/mois : dossier de dépôt, lecture IA double, contrôle des champs, envoi conforme PDF Factur-X via plateforme agréée, suivi des statuts, alertes de rejet, support email</td>
+      <td>29,00 €</td>
+    </tr>
+    <tr>
+      <td><strong>Conformité Pro</strong> — 69 €/mois</td>
+      <td>Jusqu'à 1 000 factures/mois : tout Micro + supervision mensuelle, traitement des rejets à votre place, veille réglementaire, support téléphonique</td>
+      <td>69,00 €</td>
+    </tr>
+  </tbody>
+</table>
+
+<div class="cadre">
+  <strong>Option choisie :</strong> ☐ Conformité Micro (29 €/mois) &nbsp;&nbsp; ☐ Conformité Pro (69 €/mois)
+</div>
+
+<table>
+  <tr>
+    <td>Total mise en place (une fois, HT)</td>
+    <td class="total">________ €</td>
+  </tr>
+  <tr>
+    <td>Abonnement mensuel (HT)</td>
+    <td class="total">________ € / mois</td>
+  </tr>
+</table>
+
+<div class="small">
+  TVA : 20 % appliquée le cas échéant (entreprises assujetties). Paiement : virement — mise en place payable à la commande, abonnement mensuel par prélèvement ou virement, sans engagement, résiliable avec un préavis d'un mois (art. du contrat client).
+</div>
+
+<h2>Conditions</h2>
+<ul class="small">
+  <li>Le service implique que le client dispose d'un ordinateur Windows (10/11) et d'une connexion internet.</li>
+  <li>La conformité réglementaire repose sur la plateforme agréée partenaire (SUPER PDP, immatriculation DGFiP).</li>
+  <li>Le devis est valable 30 jours. Conditions complètes : CGV et contrat client.</li>
+</ul>
+
+<div class="clear"></div>
+<div style="margin-top:40px; display:flex; justify-content:space-between;">
+  <div>
+    <div class="small">Fait le __/__/2026 — Bon pour accord</div>
+    <div style="height:60px; border-bottom:1px solid #000; width:220px;"></div>
+    <div class="small">Signature du client (précédée de « Bon pour accord »)</div>
+  </div>
+  <div>
+    <div class="small">Le prestataire</div>
+    <div style="height:60px; border-bottom:1px solid #000; width:220px;"></div>
+  </div>
+</div>
+
+</body>
+</html>

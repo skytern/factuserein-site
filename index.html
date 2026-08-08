@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FactuConforme — Facturation électronique obligatoire : on s'occupe de tout, sans changer vos habitudes</title>
+  <meta name="description" content="Facturation électronique obligatoire au 1er septembre 2026 (réception) et 2027 (émission). Déposez vos factures PDF dans un dossier : lecture IA, mise au format conforme, envoi via plateforme agréée, suivi des rejets. Abonnement dès 29 €/mois.">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container">
+    <a href="index.html" class="brand"><span class="logo">✓</span> FactuConforme</a>
+    <button class="menu-toggle" aria-label="Menu">☰</button>
+    <nav class="main-nav">
+      <a href="index.html#comment">Comment ça marche</a>
+      <a href="tarifs.html">Tarifs</a>
+      <a href="index.html#secteurs">Par secteur</a>
+      <a href="outils/validateur.html">Validateur gratuit</a>
+      <a href="index.html#faq">FAQ</a>
+      <a href="index.html#contact" class="cta">Vérifier ma conformité</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="container">
+    <div>
+      <span class="badge-urgence" id="js-jours">Obligation de réception : 1er septembre 2026</span>
+      <h1>La facturation électronique obligatoire, sans changer vos habitudes</h1>
+      <p class="lead">
+        Vous créez vos factures comme aujourd'hui (Excel, Word, votre logiciel métier), vous les déposez dans un dossier.
+        FactuConforme les lit, les met au format officiel, les envoie via une plateforme agréée et surveille les rejets.
+        <strong>Vous ne touchez à rien.</strong>
+      </p>
+      <div class="hero-actions">
+        <a href="#contact" class="btn btn-vert">Vérifier ma conformité — gratuit</a>
+        <a href="tarifs.html" class="btn btn-blanc">Voir les tarifs</a>
+      </div>
+    </div>
+    <div class="hero-visuel">
+      <div class="fenetre">
+        <div class="barre"><span></span><span></span><span></span></div>
+        <div class="split">
+          <div class="doc">
+            <strong>Votre facture</strong><br>
+            Facture n° 2026-047<br>
+            M. Client — 2 540,00 € HT<br>
+            TVA 20 % : 508,00 €<br>
+            Total TTC : 3 048,00 €<br><br>
+            <em>PDF déposé tel quel</em>
+          </div>
+          <div class="champs">
+            <strong>Champs vérifiés</strong>
+            <div class="champ">SIREN client : 123 456 789 ✓</div>
+            <div class="champ">Montant HT : 2 540,00 € ✓</div>
+            <div class="champ">TVA 20 % : 508,00 € ✓</div>
+            <div class="champ">Total TTC : 3 048,00 € ✓</div>
+            <div class="champ err">Échéance : à corriger</div>
+            <span class="ok">→ Envoyer en un clic</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="probleme">
+  <div class="container">
+    <h2>Depuis le 1er septembre 2026, votre entreprise doit <em>recevoir</em> ses factures en électronique</h2>
+    <p class="sous-titre">Et au 1er septembre 2027, elle devra les <em>émettre</em> dans un format officiel via une plateforme agréée (Factur-X, UBL ou CII). Si vous êtes dans l'un de ces cas, vous êtes concerné :</p>
+    <div class="grille grille-3">
+      <div class="carte">
+        <h3>Vous facturez sur Excel, Word ou papier</h3>
+        <p>Ces outils ne produisent pas les formats officiels. Depuis 2026, une facture PDF envoyée par email ne suffit plus pour les échanges entre professionnels.</p>
+      </div>
+      <div class="carte">
+        <h3>Votre logiciel métier n'est pas raccordé</h3>
+        <p>Grippen, Vega, GmVet, Popina, Ikosoft… de nombreux logiciels métier ne sont pas immatriculés comme plateformes agréées. Leurs utilisateurs doivent trouver une solution avant les échéances.</p>
+      </div>
+      <div class="carte">
+        <h3>Personne ne surveille vos flux</h3>
+        <p>Une facture rejetée, un statut « refusée », une erreur de format : sans supervision, vous le découvrez des semaines plus tard, paiement en retard à la clé.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section alt" id="comment">
+  <div class="container">
+    <h2>Comment ça marche — 3 étapes, zéro formation</h2>
+    <p class="sous-titre">Le principe : un dossier sur votre ordinateur. Vous déposez vos factures, nous faisons le reste.</p>
+    <div class="grille grille-3">
+      <div class="carte">
+        <div class="num">1</div>
+        <h3>Déposez vos factures</h3>
+        <p>Créez vos factures comme aujourd'hui (Excel, Word, logiciel métier). Déposez-les dans votre dossier FactuConforme, ou glissez-les depuis la fenêtre de l'application. L'Excel est converti automatiquement en PDF.</p>
+      </div>
+      <div class="carte">
+        <div class="num">2</div>
+        <h3>Vérifiez en 10 secondes</h3>
+        <p>Notre double lecture (visuelle + texte) extrait vos champs et les affiche à côté de votre facture : montants, TVA, SIREN, dates. Vous comparez, corrigez si besoin, cliquez « Envoyer ». En cas de doute, un badge vous le signale.</p>
+      </div>
+      <div class="carte">
+        <div class="num">3</div>
+        <h3>C'est envoyé, conforme et suivi</h3>
+        <p>Votre facture est convertie au format officiel (PDF Factur-X), validée, puis transmise via une plateforme agréée. Vous suivez chaque facture : transmise, reçue, rejetée, refusée — avec alerte dès qu'un problème arrive.</p>
+      </div>
+    </div>
+    <p class="marge"><a href="comment-ca-marche.html">Voir le détail : formats acceptés, sécurité, e-reporting →</a></p>
+  </div>
+</section>
+
+<section class="section" id="secteurs">
+  <div class="container">
+    <h2>Pensé pour les entreprises qui n'ont pas le temps de s'y mettre</h2>
+    <p class="sous-titre">Votre logiciel métier n'est pas conforme ? Nous ne vous demandons pas de le quitter : nous créons le pont conforme entre votre outil et la plateforme agréée.</p>
+    <div class="grille grille-3">
+      <div class="carte">
+        <h3>BTP & artisans</h3>
+        <p>Grippen, EdiBati, Onaya, Tolteck, Obat, Costructor, Hyspeed… Vos devis et factures restent sur votre outil : le dépôt se fait en quelques secondes.</p>
+        <p><a href="secteurs/btp.html">Voir le guide BTP →</a></p>
+      </div>
+      <div class="carte">
+        <h3>Santé & paramédical</h3>
+        <p>Vega, GmVet, Dr Veto, Compta Idel, Hopitalia… Kinés, infirmiers, vétérinaires : la facturation B2B (fournisseurs, cliniques) doit passer à l'électronique.</p>
+        <p><a href="secteurs/sante.html">Voir le guide santé →</a></p>
+      </div>
+      <div class="carte">
+        <h3>Restauration & CHR</h3>
+        <p>Popina, Loyco, Logicone… Le ticket B2C reste libre, mais vos factures B2B (traiteurs, fournisseurs, événementiel) sont concernées dès 2026-2027.</p>
+        <p><a href="secteurs/restauration.html">Voir le guide CHR →</a></p>
+      </div>
+      <div class="carte">
+        <h3>Coiffure & esthétique</h3>
+        <p>Ikosoft, Planity, Zenio… Ventes au particulier = e-reporting ; achats B2B = factures électroniques à recevoir. On vous couvre des deux côtés.</p>
+      </div>
+      <div class="carte">
+        <h3>Commerces & services</h3>
+        <p>Garages (OneGest, Gestauto), agences immobilières (Gestilo, DigitImmo), associations (AssoConnect), grossistes (Gespro, Gestimum)…</p>
+      </div>
+      <div class="carte">
+        <h3>Indépendants & freelances</h3>
+        <p>Zervant, Henrri, Freebe, Zoho Invoice, Facture.net… Votre outil n'est pas une plateforme agréée : notre dossier conforme prend le relais sans changer votre quotidien.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section alt" id="tarifs">
+  <div class="container">
+    <h2>Des tarifs simples, sans surprise</h2>
+    <p class="sous-titre">Un abonnement mensuel, une mise en place payée une fois, zéro coût caché. Résiliable à tout moment.</p>
+    <div class="grille grille-2">
+      <div class="carte">
+        <h3>Conformité Micro</h3>
+        <p class="prix">29 €<span> /mois HT</span></p>
+        <p class="entretien">+ mise en place 300 € HT (une fois)</p>
+        <ul>
+          <li>Jusqu'à 100 factures / mois</li>
+          <li>Dossier de dépôt + application Windows</li>
+          <li>Lecture IA + contrôle visuel des champs</li>
+          <li>Envoi conforme (PDF Factur-X) via plateforme agréée</li>
+          <li>Suivi des statuts + alertes de rejet</li>
+          <li>Support par email</li>
+        </ul>
+        <p class="marge"><a href="#contact" class="btn btn-outline">Je me lance</a></p>
+      </div>
+      <div class="carte mise-en-avant">
+        <span class="etiquette">Recommandé</span>
+        <h3>Conformité Pro</h3>
+        <p class="prix">69 €<span> /mois HT</span></p>
+        <p class="entretien">+ mise en place 600 € HT (une fois, inclut la migration)</p>
+        <ul>
+          <li>Tout Conformité Micro</li>
+          <li>Jusqu'à 1 000 factures / mois</li>
+          <li>Migration et transfert de vos factures existantes</li>
+          <li>Supervision mensuelle de vos flux (rapport)</li>
+          <li>Traitement des rejets et refus à votre place</li>
+          <li>Veille réglementaire (échéances, e-reporting)</li>
+          <li>Support téléphonique</li>
+        </ul>
+        <p class="marge"><a href="#contact" class="btn btn-vert">Je me lance</a></p>
+      </div>
+    </div>
+    <p class="marge entretien">Offre sur-mesure au-delà de 1 000 factures / mois (PME, ETI). Commission possible pour les experts-comptables : <a href="#contact">nous contacter</a>.</p>
+  </div>
+</section>
+
+<section class="section" id="validateur">
+  <div class="container">
+    <h2>Un outil gratuit pour vérifier vos factures</h2>
+    <p class="sous-titre">Le validateur de factures électroniques (Factur-X, UBL, CII) arrive. En attendant, vérifiez en 2 minutes si votre configuration est prête :</p>
+    <div class="grille grille-2">
+      <div class="carte">
+        <h3>Vérifier ma conformité (gratuit)</h3>
+        <p>Répondez à 6 questions (logiciel utilisé, volume, B2B/B2C, statut TVA). Vous recevez un diagnostic immédiat : conforme, à corriger, ou accompagnement nécessaire — sans engagement.</p>
+        <p class="marge"><a href="#contact" class="btn btn-vert">Faire le diagnostic</a></p>
+      </div>
+      <div class="carte">
+        <h3>Le validateur en ligne</h3>
+        <p>Déposez un fichier Factur-X / UBL / CII : notre outil vérifie structure, conformité EN16931 et règles françaises, et vous explique les erreurs en langage clair.</p>
+        <p class="marge"><a href="outils/validateur.html" class="btn btn-outline">Ouvrir le validateur</a></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section alt" id="faq">
+  <div class="container">
+    <h2>Questions fréquentes</h2>
+    <div class="faq marge">
+      <details>
+        <summary>Suis-je vraiment concerné par la facturation électronique ?</summary>
+        <p>Toute entreprise assujettie à la TVA établie en France est concernée, quelle que soit sa taille (TPE, micro-entrepreneur, franchise en base de TVA incluse). Depuis le <strong>1er septembre 2026</strong>, vous devez pouvoir <strong>recevoir</strong> des factures électroniques via une plateforme agréée. Au <strong>1er septembre 2027</strong>, vous devrez <strong>émettre</strong> vos factures B2B au format électronique et transmettre vos données (e-reporting pour les ventes aux particuliers et l'international).</p>
+      </details>
+      <details>
+        <summary>Je facture sur Excel/Word. Pourquoi ne puis-je pas continuer ?</summary>
+        <p>Excel et Word ne produisent pas les formats structurés officiels (Factur-X, UBL, CII) et ne sont pas raccordés à une plateforme agréée. Une facture PDF envoyée par email ne sera plus conforme pour les échanges entre professionnels. La bonne nouvelle : vous pouvez continuer à créer vos factures sur Excel — vous les déposez ensuite dans votre dossier FactuConforme, et nous les convertissons.</p>
+      </details>
+      <details>
+        <summary>Mon logiciel (Grippen, Vega, Popina…) est-il conforme ?</summary>
+        <p>Si votre logiciel n'est pas immatriculé plateforme agréée (la liste officielle est publique sur impots.gouv.fr), il ne peut pas transmettre vos factures au format officiel. Notre solution crée le pont : vous gardez votre outil, vous déposez vos factures, nous les envoyons conformément. Aucun changement d'outil, aucune double saisie obligatoire.</p>
+      </details>
+      <details>
+        <summary>Que se passe-t-il si je ne fais rien ?</summary>
+        <p>Défaut de réception : amende de 500 €, puis 1 000 € par trimestre après mise en demeure. Défaut d'émission : 15 € par facture, plafonnée à 15 000 € par an. L'administration annonce une période de bienveillance au démarrage — mais la mise en conformité prend du temps (choix, paramétrage, tests). Mieux vaut être prêt que de négocier.</p>
+      </details>
+      <details>
+        <summary>Mes factures restent-elles confidentielles ?</summary>
+        <p>Oui. Vos fichiers sont chiffrés en transit, hébergés en France, et ne servent qu'à la mise en conformité de vos factures. La plateforme agréée partenaire est immatriculée DGFiP et certifiée ISO 27001. Détails dans notre <a href="legal/rgpd.html">politique de confidentialité</a> et nos CGV.</p>
+      </details>
+      <details>
+        <summary>Puis-je résilier quand je veux ?</summary>
+        <p>Oui. Abonnement sans engagement, résiliable à tout moment, préavis d'un mois. Vos factures déjà transmises restent archivées conformément à la réglementation (10 ans) sur la plateforme agréée.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="contact">
+  <div class="container">
+    <div class="cta-final">
+      <h2>Prêt à ne plus y penser ?</h2>
+      <p>Réponse sous 24 h ouvrées. Diagnostic de conformité gratuit et sans engagement : 6 questions, 2 minutes.</p>
+      <form action="mailto:contact@factuconforme.fr" method="post" enctype="text/plain" style="max-width:520px;margin:0 auto;text-align:left;">
+        <label for="c-nom">Nom / Entreprise</label>
+        <input type="text" id="c-nom" name="nom" required>
+        <label for="c-email">Email</label>
+        <input type="email" id="c-email" name="email" required>
+        <label for="c-message">Votre situation (logiciel utilisé, volume mensuel de factures)</label>
+        <textarea id="c-message" name="message" rows="4" required></textarea>
+        <button type="submit" class="btn btn-vert" style="width:100%;margin-top:16px;">Recevoir mon diagnostic gratuit</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container">
+    <div>
+      <h4>FactuConforme</h4>
+      <p>Le passage à la facturation électronique obligatoire sans changer vos habitudes. Déposez, vérifiez, c'est envoyé.</p>
+    </div>
+    <div>
+      <h4>Navigation</h4>
+      <a href="index.html#comment">Comment ça marche</a>
+      <a href="tarifs.html">Tarifs</a>
+      <a href="index.html#secteurs">Par secteur</a>
+      <a href="outils/validateur.html">Validateur gratuit</a>
+    </div>
+    <div>
+      <h4>Légal</h4>
+      <a href="legal/mentions-legales.html">Mentions légales</a>
+      <a href="legal/rgpd.html">Données personnelles (RGPD)</a>
+      <a href="mailto:contact@factuconforme.fr">contact@factuconforme.fr</a>
+    </div>
+    <p class="mentions">© <span class="js-annee">2026</span> FactuConforme — Plateforme agréée partenaire : SUPER PDP (immatriculation DGFiP, ISO 27001, Peppol). Informations réglementaires : impots.gouv.fr</p>
+  </div>
+</footer>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>

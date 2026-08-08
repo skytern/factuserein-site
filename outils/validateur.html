@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Validateur de factures électroniques (Factur-X, UBL, CII) — FactuConforme</title>
+  <meta name="description" content="Validez gratuitement vos factures électroniques : structure, conformité EN16931 et règles françaises. Factur-X, UBL, CII, CDAR. Le validateur en ligne arrive — inscrivez-vous pour être prévenu.">
+  <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container">
+    <a href="../index.html" class="brand"><span class="logo">✓</span> FactuConforme</a>
+    <button class="menu-toggle" aria-label="Menu">☰</button>
+    <nav class="main-nav">
+      <a href="../index.html#comment">Comment ça marche</a>
+      <a href="../tarifs.html">Tarifs</a>
+      <a href="../index.html#secteurs">Par secteur</a>
+      <a href="validateur.html">Validateur gratuit</a>
+      <a href="../index.html#contact" class="cta">Vérifier ma conformité</a>
+    </nav>
+  </div>
+</header>
+
+<section class="page-titre">
+  <div class="container">
+    <h1>Validateur de factures électroniques</h1>
+    <p>Vérifiez qu'un fichier Factur-X, UBL ou CII est conforme avant transmission : structure XML, profil déclaré, règles EN16931 et règles françaises. Gratuit, sans inscription.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div id="js-zone-depot" class="zone-depot" role="button" tabindex="0" aria-label="Déposer un fichier">
+      <div class="gros">📄</div>
+      <p><strong>Déposez votre fichier ici</strong> ou cliquez pour parcourir</p>
+      <p class="entretien">PDF Factur-X (.pdf), XML UBL ou CII (.xml) — 10 Mo maximum</p>
+      <input type="file" id="js-fichier" accept=".pdf,.xml" style="display:none">
+    </div>
+    <p id="js-statut-upload" class="marge entretien"></p>
+
+    <div class="encart vert marge">
+      <strong>Le validateur en ligne est en cours de branchement.</strong> Il sera disponible gratuitement ici très prochainement (validation XSD + schematrons EN16931 et règles françaises, rapport d'erreurs en langage clair). En attendant, utilisez le <a href="../index.html#contact">diagnostic de conformité gratuit</a> : 6 questions, réponse immédiate sur votre situation.
+    </div>
+
+    <h2 class="marge">Ce que vérifiera le validateur</h2>
+    <div class="grille grille-3">
+      <div class="carte">
+        <h3>Structure</h3>
+        <p>Le fichier est-il bien un PDF Factur-X (XML embarqué) ou un XML UBL/CII valide ? Profil détecté : MINIMUM, BASIC WL, BASIC, EN 16931, EXTENDED.</p>
+      </div>
+      <div class="carte">
+        <h3>Conformité EN16931</h3>
+        <p>Règles européennes : champs obligatoires, cohérence des montants, TVA, identification des parties (SIREN, TVA intracommunautaire).</p>
+      </div>
+      <div class="carte">
+        <h3>Règles françaises</h3>
+        <p>Règles de gestion additionnelles France (BR-FR) et messages de cycle de vie (CDAR) : transmission, rejet, refus motivé.</p>
+      </div>
+    </div>
+
+    <h2 class="marge">Pourquoi valider vos factures ?</h2>
+    <p>Une facture mal formée est <strong>rejetée</strong> par la plateforme du destinataire : retard de paiement, relance, correction manuelle. La validation avant envoi évite les allers-retours — c'est l'une des briques incluses dans vos abonnements FactuConforme (validation automatique avant chaque transmission).</p>
+    <p class="marge"><a href="../index.html#contact" class="btn btn-vert">Faire le diagnostic de conformité gratuit</a></p>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container">
+    <div>
+      <h4>FactuConforme</h4>
+      <p>Le passage à la facturation électronique obligatoire sans changer vos habitudes.</p>
+    </div>
+    <div>
+      <h4>Navigation</h4>
+      <a href="../index.html#comment">Comment ça marche</a>
+      <a href="../tarifs.html">Tarifs</a>
+      <a href="../index.html#secteurs">Par secteur</a>
+      <a href="validateur.html">Validateur gratuit</a>
+    </div>
+    <div>
+      <h4>Légal</h4>
+      <a href="../legal/mentions-legales.html">Mentions légales</a>
+      <a href="../legal/rgpd.html">Données personnelles (RGPD)</a>
+      <a href="mailto:contact@factuconforme.fr">contact@factuconforme.fr</a>
+    </div>
+    <p class="mentions">© <span class="js-annee">2026</span> FactuConforme — Plateforme agréée partenaire : SUPER PDP.</p>
+  </div>
+</footer>
+
+<script src="../assets/js/main.js"></script>
+</body>
+</html>
