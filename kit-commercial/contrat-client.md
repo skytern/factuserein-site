@@ -2,7 +2,7 @@
 
 **Entre les soussignés :**
 
-**Le Prestataire :** FactuConforme, entreprise individuelle (micro-entreprise), SIREN : ______, dont le siège est situé : ______, représentée par ______, email : contact@factuconforme.fr
+**Le Prestataire :** FactuSerein, entreprise individuelle (micro-entreprise), SIREN : ______, dont le siège est situé : ______, représentée par ______, email : contact@factuserein.fr
 
 **Et le Client :** ______, société / entreprise individuelle, SIREN : ______, dont le siège est situé : ______, représentée par ______.
 
@@ -12,7 +12,7 @@ Ci-après ensemble « les Parties ».
 
 ## ARTICLE 1 — OBJET
 
-Le présent contrat définit les conditions de fourniture du service d'abonnement « FactuConforme » qui permet au Client de :
+Le présent contrat définit les conditions de fourniture du service d'abonnement « FactuSerein » qui permet au Client de :
 - déposer ses factures (PDF ou Excel) via un dossier de dépôt / application Windows ;
 - faire convertir ses factures au format officiel de facturation électronique (PDF Factur-X, ou UBL/CII selon les besoins) ;
 - faire transmettre ses factures à ses clients via une plateforme agréée partenaire (SUPER PDP, immatriculée DGFiP) ;
@@ -68,7 +68,7 @@ Le Client s'engage à :
 2. Les données sont hébergées en France. Chiffrement des échanges (TLS).
 3. Conservation : factures 10 ans (obligation légale), données de compte pendant la durée du contrat puis 3 ans, journaux techniques 12 mois.
 4. Sous-traitants : plateforme agréée partenaire, hébergeur (UE), fournisseur d'IA pour l'extraction des données. Aucune revente de données.
-5. Registre des traitements tenu par le Prestataire ; droits des personnes (accès, rectification, effacement, portabilité) exerçables à contact@factuconforme.fr.
+5. Registre des traitements tenu par le Prestataire ; droits des personnes (accès, rectification, effacement, portabilité) exerçables à contact@factuserein.fr.
 
 ## ARTICLE 8 — CONFIDENTIALITÉ
 

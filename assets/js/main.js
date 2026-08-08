@@ -1,5 +1,5 @@
 /* ============================================================
-   FactuConforme — script commun
+   FactuSerein — script commun
    ============================================================ */
 (function () {
   "use strict";
