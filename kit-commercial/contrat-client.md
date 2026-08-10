@@ -23,8 +23,8 @@ Le présent contrat définit les conditions de fourniture du service d'abonnemen
 
 | Offre | Prix mensuel HT | Mise en place HT (une fois) |
 |---|---|---|
-| Conformité Micro (jusqu'à 100 factures/mois) | 29,00 € | 300,00 € |
-| Conformité Pro (jusqu'à 1 000 factures/mois) | 69,00 € | 600,00 € |
+| Conformité Micro (jusqu'à 100 factures/mois) | 24,00 € | 250,00 € |
+| Conformité Pro (jusqu'à 1 000 factures/mois) | 59,00 € | 490,00 € |
 
 - Offre souscrite : ☐ Conformité Micro ☐ Conformité Pro
 - Mise en place facturée à la commande. Abonnement mensuel facturé à terme échu.

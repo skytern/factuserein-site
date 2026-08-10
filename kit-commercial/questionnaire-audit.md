@@ -55,7 +55,7 @@
 
 **Risque principal identifié :** ______________________________________________________
 
-**Offre recommandée :** ☐ Conformité Micro (29 €/mois + 300 €) ☐ Conformité Pro (69 €/mois + 600 €) ☐ Devis spécifique
+**Offre recommandée :** ☐ Conformité Micro (24 €/mois + 250 €) ☐ Conformité Pro (59 €/mois + 490 €) ☐ Devis spécifique
 
 **Prochaine action :** ☐ Envoi du devis ☐ Démo ☐ Relance le __/__/2026
 
