@@ -2,7 +2,7 @@
 
 **Entre les soussignés :**
 
-**Le Prestataire :** FactuSerein, entreprise individuelle (micro-entreprise), SIREN : ______, dont le siège est situé : ______, représentée par ______, email : contact@factuserein.fr
+**Le Prestataire :** FactuSerein, entreprise individuelle (micro-entreprise), Tim Le Bars, SIREN : 919 960 013, TVA intracommunautaire : FR 64 919 960 013, dont le siège est situé : 4 rue du Colonel Polidori, 13090 Aix-en-Provence, email : contact@factuserein.fr
 
 **Et le Client :** ______, société / entreprise individuelle, SIREN : ______, dont le siège est situé : ______, représentée par ______.
 
@@ -21,24 +21,28 @@ Le présent contrat définit les conditions de fourniture du service d'abonnemen
 
 ## ARTICLE 2 — OFFRE SOUSCRITE ET PRIX
 
-| Offre | Prix mensuel HT | Mise en place HT (une fois) |
+| Offre | Mensuel HT | Annuel HT (1 mois offert) |
 |---|---|---|
-| Conformité Micro (jusqu'à 100 factures/mois) | 24,00 € | 250,00 € |
-| Conformité Pro (jusqu'à 1 000 factures/mois) | 59,00 € | 490,00 € |
+| Conformité Micro (jusqu'à 100 factures/mois) | 24,00 € | 264,00 € |
+| Conformité Pro (jusqu'à 1 000 factures/mois) | 59,00 € | 649,00 € |
 
 - Offre souscrite : ☐ Conformité Micro ☐ Conformité Pro
-- Mise en place facturée à la commande. Abonnement mensuel facturé à terme échu.
-- TVA : 20 % appliquée le cas échéant.
+- Formule souscrite : ☐ Mensuelle (28,80 € TTC micro / 70,80 € TTC pro) ☐ Annuelle (316,80 € TTC micro / 778,80 € TTC pro — 11 mois facturés, 1 mois offert)
+- Aucun frais d'initialisation. Virement initial avant mise en service ; mensuel à terme échu, annuel prépayé.
+- TVA : 20 % appliquée (factures émises par le Prestataire).
 - Au-delà de 1 000 factures/mois : devis spécifique.
 
-## ARTICLE 3 — DURÉE ET RÉSILIATION
+## ARTICLE 3 — DURÉE, REMBOURSEMENT ET RÉSILIATION
 
-Le contrat est conclu **sans engagement de durée**, à compter de la date de mise en service. Résiliation à tout moment par le Client ou le Prestataire, moyennant un **préavis d'un mois** (email avec accusé de réception). Les sommes versées au titre de la mise en place restent acquises au Prestataire. En cas de résiliation, les factures déjà transmises restent archivées conformément à la réglementation sur la plateforme agréée ; le Client conserve l'accès en lecture aux documents archivés pendant la durée légale, dans les conditions de la plateforme partenaire.
+1. **Remboursement intégral sous 14 jours** : sur simple demande (email avec accusé de réception) dans les 14 jours suivant le premier virement, le montant versé est intégralement remboursé (engagement commercial du Prestataire — les professionnels ne bénéficient pas du droit de rétractation légal).
+2. **Formule mensuelle** : résiliable à tout moment par le Client ou le Prestataire, sous réserve du mois en cours (sommes du mois payé acquises).
+3. **Formule annuelle** : ferme et définitive passé le délai de 14 jours ; les sommes versées restent acquises, le service reste utilisable jusqu'au terme de l'année souscrite.
+4. En cas de résiliation, les factures déjà transmises restent archivées conformément à la réglementation sur la plateforme agréée ; le Client conserve l'accès en lecture aux documents archivés pendant la durée légale, dans les conditions de la plateforme partenaire.
 
 ## ARTICLE 4 — OBLIGATIONS DU PRESTATAIRE
 
 Le Prestataire s'engage à :
-1. Mettre en place le service dans un délai de 10 jours ouvrés après réception du paiement de la mise en place ;
+1. Mettre en place le service dans un délai de 10 jours ouvrés après réception du virement initial ;
 2. Assurer la disponibilité du service dans la limite d'un objectif de 99 % par mois, hors maintenances notifiées et cas de force majeure ;
 3. Convertir et transmettre les factures déposées au format officiel via la plateforme agréée partenaire, après validation par le Client ;
 4. Informer le Client des échéances réglementaires (réception 01/09/2026, émission et e-reporting 01/09/2027) et de toute évolution réglementaire majeure (offre Pro) ;

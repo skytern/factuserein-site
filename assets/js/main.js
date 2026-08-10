@@ -46,31 +46,4 @@
       }
     });
   });
-
-  // Zone de dépôt factice (page validateur) : indique le format, désactive l'envoi réel
-  var zone = document.getElementById("js-zone-depot");
-  var input = document.getElementById("js-fichier");
-  var statut = document.getElementById("js-statut-upload");
-  if (zone && input) {
-    zone.addEventListener("click", function () { input.click(); });
-    zone.addEventListener("dragover", function (e) { e.preventDefault(); });
-    zone.addEventListener("drop", function (e) {
-      e.preventDefault();
-      if (e.dataTransfer.files.length) {
-        input.files = e.dataTransfer.files;
-        afficherFichier(e.dataTransfer.files[0]);
-      }
-    });
-    input.addEventListener("change", function () {
-      if (input.files.length) afficherFichier(input.files[0]);
-    });
-    function afficherFichier(f) {
-      if (!statut) return;
-      statut.innerHTML =
-        'Fichier reçu : <strong>' + f.name + '</strong> (' + Math.round(f.size / 1024) + ' Ko). ' +
-        '<br>Le validateur en ligne sera branché ici dès sa sortie. ' +
-        'Laissez votre email ci-dessous pour être prévenu — et pour vérifier dès maintenant ' +
-        'si votre logiciel est conforme, utilisez le bouton "Vérifier ma conformité".';
-    }
-  }
 })();

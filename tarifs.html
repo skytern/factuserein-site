@@ -3,21 +3,28 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Tarifs — FactuSerein | Facturation électronique TPE/PME dès 288 €/an HT</title>
+  <title>Tarifs — FactuSerein | Facturation électronique TPE/PME dès 24 €/mois HT</title>
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32x32.png">
+<link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
   <meta name="description" content="Abonnement facturation électronique : Conformité Micro 288 €/an HT, Conformité Pro 708 €/an HT. Formule annuelle prépayée, remboursement intégral sous 14 jours.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Tarifs — FactuSerein : 24 €/mois HT ou 264 €/an HT (1 mois offert)">
+  <meta property="og:description" content="Tarifs — FactuSerein : 24 €/mois HT ou 264 €/an HT (1 mois offert)">
+  <meta property="og:image" content="https://d2po7vfowy39cq.cloudfront.net/assets/img/android-chrome-192x192.png">
+  <meta property="og:locale" content="fr_FR">
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
 
 <header class="site-header">
   <div class="container">
-    <a href="index.html" class="brand"><span class="logo">✓</span> FactuSerein</a>
+    <a href="index.html" class="brand"><img class="logo" src="assets/img/logo.png" alt="Logo FactuSerein"> FactuSerein</a>
     <button class="menu-toggle" aria-label="Menu">☰</button>
     <nav class="main-nav">
       <a href="index.html#comment">Comment ça marche</a>
       <a href="tarifs.html">Tarifs</a>
       <a href="index.html#secteurs">Par secteur</a>
-      <a href="outils/validateur.html">Validateur gratuit</a>
+      <a href="outils/validateur.html">Télécharger</a>
       <a href="index.html#faq">FAQ</a>
       <a href="index.html#contact" class="cta">Vérifier ma conformité</a>
     </nav>
@@ -27,7 +34,7 @@
 <section class="page-titre">
   <div class="container">
     <h1>Tarifs</h1>
-    <p>Deux offres, zéro coût caché, sans engagement. La mise en place est payée une seule fois ; l'abonnement couvre l'envoi conforme, le suivi et la supervision.</p>
+    <p>Deux offres, deux formules : <strong>mensuelle</strong> (sans engagement) ou <strong>annuelle</strong> (1 mois offert). Zéro frais d'initialisation, remboursement intégral sous 14 jours. La transmission réglementaire repose sur une plateforme de dématérialisation partenaire <strong>agréée par la DGFiP</strong>.</p>
   </div>
 </section>
 
@@ -36,8 +43,8 @@
     <div class="grille grille-2">
       <div class="carte">
         <h3>Conformité Micro</h3>
-        <p class="prix">288 €<span> /an HT</span></p>
-        <p class="entretien">Formule annuelle prépayée — 345,60 € TTC (TVA 20 % incluse) · remboursement intégral sous 14 jours</p>
+        <p class="prix">24 €<span> /mois HT</span></p>
+        <p class="entretien">Mensuel : 28,80 € TTC · Annuel (1 mois offert) : <strong>264 € HT</strong> — 316,80 € TTC · remboursement 14 jours</p>
         <ul>
           <li>Jusqu'à 100 factures / mois (émises + reçues)</li>
           <li>Dossier de dépôt + application Windows (gratuite)</li>
@@ -53,8 +60,8 @@
       <div class="carte mise-en-avant">
         <span class="etiquette">Recommandé</span>
         <h3>Conformité Pro</h3>
-        <p class="prix">708 €<span> /an HT</span></p>
-        <p class="entretien">Formule annuelle prépayée — 849,60 € TTC (TVA 20 % incluse) · remboursement intégral sous 14 jours</p>
+        <p class="prix">59 €<span> /mois HT</span></p>
+        <p class="entretien">Mensuel : 70,80 € TTC · Annuel (1 mois offert) : <strong>649 € HT</strong> — 778,80 € TTC · remboursement 14 jours</p>
         <ul>
           <li>Tout Conformité Micro</li>
           <li>Jusqu'à 1 000 factures / mois (émises + reçues)</li>
@@ -92,7 +99,7 @@
     <div class="faq marge">
       <details>
         <summary>Y a-t-il un engagement de durée ?</summary>
-        <p>Offre annuelle prépayée. <strong>Remboursement intégral sous 14 jours</strong> si vous changez d'avis (simple email). Passé ce délai, l'abonnement court jusqu'au terme de l'année souscrite.</p>
+        <p><strong>Mensuel</strong> : sans engagement, résiliable à tout moment (mois en cours dû). <strong>Annuel</strong> : remboursement intégral sous 14 jours, puis formule ferme jusqu'au terme de l'année souscrite (1 mois offert).</p>
       </details>
       <details>
         <summary>Et si je dépasse 1 000 factures par mois ?</summary>
@@ -121,7 +128,7 @@
       <a href="index.html#comment">Comment ça marche</a>
       <a href="tarifs.html">Tarifs</a>
       <a href="index.html#secteurs">Par secteur</a>
-      <a href="outils/validateur.html">Validateur gratuit</a>
+      <a href="outils/validateur.html">Télécharger</a>
     </div>
     <div>
       <h4>Légal</h4>
@@ -134,5 +141,16 @@
 </footer>
 
 <script src="assets/js/main.js"></script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {"@type": "Question", "name": "Y a-t-il un engagement de durée ?", "acceptedAnswer": {"@type": "Answer", "text": "Mensuel : sans engagement, résiliable à tout moment (mois en cours dû). Annuel : remboursement intégral sous 14 jours, puis formule ferme jusqu'au terme de l'année (1 mois offert)."}},
+    {"@type": "Question", "name": "Le prix inclut-il la plateforme agréée ?", "acceptedAnswer": {"@type": "Answer", "text": "Oui. La transmission réglementaire passe par une plateforme de dématérialisation partenaire agréée par la DGFiP, sans surcoût, dans la limite du volume inclus."}},
+    {"@type": "Question", "name": "Et si je dépasse 1 000 factures par mois ?", "acceptedAnswer": {"@type": "Answer", "text": "Offre sur-mesure au-delà (PME, ETI). Devis selon votre volume et vos besoins."}}
+  ]
+}
+</script>
 </body>
 </html>

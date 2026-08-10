@@ -4,20 +4,27 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>FactuSerein — Facturation électronique obligatoire : on s'occupe de tout, sans changer vos habitudes</title>
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32x32.png">
+<link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
   <meta name="description" content="Facturation électronique obligatoire au 1er septembre 2026 (réception) et 2027 (émission). Déposez vos factures PDF dans un dossier : lecture IA, mise au format conforme, envoi via plateforme agréée, suivi des rejets. Abonnement dès 24 €/mois.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="FactuSerein — Facturation électronique obligatoire : on s'occupe de tout">
+  <meta property="og:description" content="FactuSerein — Facturation électronique obligatoire : on s'occupe de tout">
+  <meta property="og:image" content="https://d2po7vfowy39cq.cloudfront.net/assets/img/android-chrome-192x192.png">
+  <meta property="og:locale" content="fr_FR">
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
 
 <header class="site-header">
   <div class="container">
-    <a href="index.html" class="brand"><span class="logo">✓</span> FactuSerein</a>
+    <a href="index.html" class="brand"><img class="logo" src="assets/img/logo.png" alt="Logo FactuSerein"> FactuSerein</a>
     <button class="menu-toggle" aria-label="Menu">☰</button>
     <nav class="main-nav">
       <a href="index.html#comment">Comment ça marche</a>
       <a href="tarifs.html">Tarifs</a>
       <a href="index.html#secteurs">Par secteur</a>
-      <a href="outils/validateur.html">Validateur gratuit</a>
+      <a href="outils/validateur.html">Télécharger</a>
       <a href="index.html#faq">FAQ</a>
       <a href="index.html#contact" class="cta">Vérifier ma conformité</a>
     </nav>
@@ -149,8 +156,8 @@
     <div class="grille grille-2">
       <div class="carte">
         <h3>Conformité Micro</h3>
-        <p class="prix">288 €<span> /an HT</span></p>
-        <p class="entretien">Formule annuelle — 345,60 € TTC · remboursement 14 jours</p>
+        <p class="prix">24 €<span> /mois HT</span></p>
+        <p class="entretien">Mensuel 28,80 € TTC · Annuel 264 € HT (1 mois offert) · remboursement 14 jours</p>
         <ul>
           <li>Jusqu'à 100 factures / mois</li>
           <li>Dossier de dépôt + application Windows</li>
@@ -164,8 +171,8 @@
       <div class="carte mise-en-avant">
         <span class="etiquette">Recommandé</span>
         <h3>Conformité Pro</h3>
-        <p class="prix">708 €<span> /an HT</span></p>
-        <p class="entretien">Formule annuelle — 849,60 € TTC · remboursement 14 jours</p>
+        <p class="prix">59 €<span> /mois HT</span></p>
+        <p class="entretien">Mensuel 70,80 € TTC · Annuel 649 € HT (1 mois offert) · remboursement 14 jours</p>
         <ul>
           <li>Tout Conformité Micro</li>
           <li>Jusqu'à 1 000 factures / mois</li>
@@ -219,7 +226,7 @@
       </details>
       <details>
         <summary>Que se passe-t-il si je ne fais rien ?</summary>
-        <p>Défaut de réception : amende de 500 €, puis 1 000 € par trimestre après mise en demeure. Défaut d'émission : 15 € par facture, plafonnée à 15 000 € par an. L'administration annonce une période de bienveillance au démarrage — mais la mise en conformité prend du temps (choix, paramétrage, tests). Mieux vaut être prêt que de négocier.</p>
+        <p>Défaut de réception : amende de 500 €, puis 1 000 € par trimestre après mise en demeure. Défaut d'émission : <strong>50 € par facture</strong> (plafond 15 000 €/an), et 500 € par transmission manquante pour l'e-reporting. Une clause de bienveillance exonère la première infraction si elle est réparée spontanément ou sous 30 jours — mais la mise en conformité prend du temps (choix, paramétrage, tests). Mieux vaut être prêt que de négocier.</p>
       </details>
       <details>
         <summary>Mes factures restent-elles confidentielles ?</summary>
@@ -227,7 +234,7 @@
       </details>
       <details>
         <summary>Puis-je résilier quand je veux ?</summary>
-        <p>Oui. Abonnement sans engagement, résiliable à tout moment, préavis d'un mois. Vos factures déjà transmises restent archivées conformément à la réglementation (10 ans) sur la plateforme agréée.</p>
+        <p><strong>Formule mensuelle</strong> : oui, à tout moment (mois en cours dû). <strong>Formule annuelle</strong> : remboursement intégral sous 14 jours, puis engagement jusqu'au terme de l'année (1 mois offert). Vos factures déjà transmises restent archivées conformément à la réglementation (10 ans) sur la plateforme agréée.</p>
       </details>
     </div>
   </div>
@@ -238,7 +245,7 @@
     <div class="cta-final">
       <h2>Prêt à ne plus y penser ?</h2>
       <p>Réponse sous 24 h ouvrées. Diagnostic de conformité gratuit et sans engagement : 6 questions, 2 minutes.</p>
-      <form action="mailto:contact@factuserein.fr" method="post" enctype="text/plain" style="max-width:520px;margin:0 auto;text-align:left;">
+      <form id="c-form" style="max-width:520px;margin:0 auto;text-align:left;">
         <label for="c-nom">Nom / Entreprise</label>
         <input type="text" id="c-nom" name="nom" required>
         <label for="c-email">Email</label>
@@ -246,7 +253,26 @@
         <label for="c-message">Votre situation (logiciel utilisé, volume mensuel de factures)</label>
         <textarea id="c-message" name="message" rows="4" required></textarea>
         <button type="submit" class="btn btn-vert" style="width:100%;margin-top:16px;">Recevoir mon diagnostic gratuit</button>
+        <p id="c-statut" style="font-size:13px;margin-top:10px"></p>
       </form>
+      <script>
+        document.getElementById('c-form').addEventListener('submit', async function (e) {
+          e.preventDefault();
+          var statut = document.getElementById('c-statut');
+          statut.textContent = 'Envoi en cours…';
+          try {
+            var rep = await fetch('https://1vevdqrgm9.execute-api.eu-west-3.amazonaws.com/api/v1/contact', {
+              method: 'POST',
+              body: new FormData(e.target)
+            });
+            var d = await rep.json();
+            statut.textContent = d.message || (d.ok ? 'Message envoyé.' : 'Erreur.');
+            if (d.ok) e.target.reset();
+          } catch (err) {
+            statut.textContent = 'Envoi impossible — écrivez-nous à contact@factuserein.fr.';
+          }
+        });
+      </script>
     </div>
   </div>
 </section>
@@ -262,7 +288,7 @@
       <a href="index.html#comment">Comment ça marche</a>
       <a href="tarifs.html">Tarifs</a>
       <a href="index.html#secteurs">Par secteur</a>
-      <a href="outils/validateur.html">Validateur gratuit</a>
+      <a href="outils/validateur.html">Télécharger</a>
     </div>
     <div>
       <h4>Légal</h4>
@@ -275,5 +301,16 @@
 </footer>
 
 <script src="assets/js/main.js"></script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {"@type": "Question", "name": "Que se passe-t-il si je ne fais rien ?", "acceptedAnswer": {"@type": "Answer", "text": "Défaut de réception : amende de 500 € puis 1 000 € par trimestre après mise en demeure. Défaut d'émission : 50 € par facture (plafond 15 000 €/an). Une clause de bienveillance exonère la première infraction réparée spontanément ou sous 30 jours."}},
+    {"@type": "Question", "name": "Puis-je résilier quand je veux ?", "acceptedAnswer": {"@type": "Answer", "text": "Formule mensuelle : oui, à tout moment (mois en cours dû). Formule annuelle : remboursement intégral sous 14 jours, puis engagement jusqu'au terme de l'année (1 mois offert)."}},
+    {"@type": "Question", "name": "Mes factures restent-elles confidentielles ?", "acceptedAnswer": {"@type": "Answer", "text": "Oui. Vos fichiers sont chiffrés en transit, hébergés en Europe, et ne servent qu'à la mise en conformité. La transmission passe par une plateforme de dématérialisation partenaire agréée par la DGFiP, certifiée ISO 27001."}}
+  ]
+}
+</script>
 </body>
 </html>
