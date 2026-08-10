@@ -38,7 +38,7 @@ Les petites PME restent une cible secondaire. Les cabinets comptables sont des p
 - Palette claire : blanc, bleu confiance, vert validation, fonds crème/bleu pâle.
 - Hero lumineux, une seule illustration simple de document validé ; supprimer la fausse interface technique en split view.
 - Blocs courts, grandes marges, CTA principal « Être accompagné ».
-- Bloc local visible : Aix-en-Provence + `contact@factuserein.com`; un téléphone sera affiché uniquement lorsqu'un numéro professionnel sera fourni.
+- Bloc local visible : Aix-en-Provence + `contact@factuserein.fr`; un téléphone sera affiché uniquement lorsqu'un numéro professionnel sera fourni.
 
 ## SEO
 

@@ -15,7 +15,7 @@
 - Use « format électronique conforme aux règles françaises » and « vérification avant transmission ».
 - Do not use an administration logo or imply government certification.
 - Use the owner brand badge « Prêt pour la facturation électronique ».
-- Position the service as human support from Aix-en-Provence, using `contact@factuserein.com`; do not invent a phone number.
+- Position the service as human support from Aix-en-Provence, using `contact@factuserein.fr`; do not invent a phone number.
 - Keep SEO terms in headings and sector guides: facturation électronique TPE, métier, logiciel et Aix-en-Provence.
 
 ---
