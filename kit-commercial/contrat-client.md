@@ -35,18 +35,18 @@ Le présent contrat définit les conditions de fourniture du service d'abonnemen
 ## ARTICLE 3 — DURÉE, REMBOURSEMENT ET RÉSILIATION
 
 1. **Remboursement intégral sous 14 jours** : sur simple demande (email avec accusé de réception) dans les 14 jours suivant le premier virement, le montant versé est intégralement remboursé (engagement commercial du Prestataire — les professionnels ne bénéficient pas du droit de rétractation légal).
-2. **Formule mensuelle** : résiliable à tout moment par le Client ou le Prestataire, sous réserve du mois en cours (sommes du mois payé acquises).
+2. **Formule mensuelle** : résiliable à tout moment par le Client (mois en cours dû) ; résiliation par le Prestataire moyennant un préavis de 30 jours notifié par email (le mois en cours restant dû).
 3. **Formule annuelle** : ferme et définitive passé le délai de 14 jours ; les sommes versées restent acquises, le service reste utilisable jusqu'au terme de l'année souscrite.
 4. En cas de résiliation, les factures déjà transmises restent archivées conformément à la réglementation sur la plateforme agréée ; le Client conserve l'accès en lecture aux documents archivés pendant la durée légale, dans les conditions de la plateforme partenaire.
 
 ## ARTICLE 4 — OBLIGATIONS DU PRESTATAIRE
 
 Le Prestataire s'engage à :
-1. Mettre en place le service dans un délai de 10 jours ouvrés après réception du virement initial ;
-2. Assurer la disponibilité du service dans la limite d'un objectif de 99 % par mois, hors maintenances notifiées et cas de force majeure ;
+1. Mettre en place le service dans un délai de 10 jours ouvrés à compter de la réception cumulée de l'encaissement du virement initial et de l'ensemble des documents et informations nécessaires, dans la limite des délais de la plateforme partenaire ;
+2. Mettre en œuvre les moyens raisonnables pour assurer une disponibilité du service de 99 % par mois, hors maintenances notifiées, cas de force majeure et défaillances de l'hébergeur ou de la plateforme partenaire ;
 3. Convertir et transmettre les factures déposées au format officiel via la plateforme agréée partenaire, après validation par le Client ;
-4. Informer le Client des échéances réglementaires (réception 01/09/2026, émission et e-reporting 01/09/2027) et de toute évolution réglementaire majeure (offre Pro) ;
-5. Garantir la confidentialité des données du Client.
+4. Communiquer au Client, dans la limite de ses moyens et des informations dont il a connaissance, les échéances réglementaires (réception 01/09/2026, émission 01/09/2027) et leurs évolutions ; le Client reste responsable du suivi de ses propres obligations légales. Le e-reporting (B2C, international) n'est pas inclus dans le service ;
+5. Prendre les mesures de sécurité et de confidentialité appropriées au regard de la réglementation et de l'état de l'art.
 
 ## ARTICLE 5 — OBLIGATIONS DU CLIENT
 
