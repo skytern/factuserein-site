@@ -17,7 +17,7 @@ Le présent contrat définit les conditions de fourniture du service d'abonnemen
 - faire préparer ses factures selon les règles françaises de facturation électronique ;
 - faire transmettre ses factures à ses clients via une plateforme agréée partenaire ;
 - suivre les statuts de cycle de vie (transmission, réception, rejet, refus) ;
-- bénéficier de l'accompagnement humain par email (réponse sous 24 h ouvrées).
+- bénéficier de l'accompagnement humain par email (réponse dans un délai raisonnable).
 
 ## ARTICLE 2 — OFFRE SOUSCRITE ET PRIX
 
