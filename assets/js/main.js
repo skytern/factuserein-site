@@ -10,6 +10,9 @@
   if (toggle && nav) {
     toggle.addEventListener("click", function () {
       nav.classList.toggle("ouvert");
+      var ouvert = nav.classList.contains("ouvert");
+      toggle.setAttribute("aria-expanded", ouvert ? "true" : "false");
+      toggle.setAttribute("aria-label", ouvert ? "Fermer le menu" : "Ouvrir le menu");
     });
   }
 
