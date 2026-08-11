@@ -49,6 +49,8 @@ jobs:
           --delete
           --exclude ".git/*"
           --exclude ".git/**"
+          --exclude ".github/*"
+          --exclude ".github/**"
           --exclude "docs/*"
           --exclude ".agents/*"
       - name: Invalidate CloudFront
