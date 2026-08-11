@@ -42,7 +42,6 @@
 
 | Question | Réponse |
 |---|---|
-| Besoin de migration de factures existantes (volume) ? | |
 | Besoin d'accompagnement e-reporting (B2C, paiements, international) ? | |
 | Interlocuteur expert-comptable (à qui envoyer la proposition en copie) ? | |
 | Contraintes particulières (multi-sites, logiciel métier non exportable…) | |
