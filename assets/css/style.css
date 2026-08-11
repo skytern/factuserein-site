@@ -98,6 +98,9 @@ a:hover { color: var(--green-700); }
 .section.alt { background: var(--white); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
 .section h2 { max-width: 850px; margin-bottom: 14px; color: var(--navy-900); font-size: clamp(1.9rem, 3.2vw, 2.65rem); line-height: 1.13; letter-spacing: -.04em; }
 .section .sous-titre { max-width: 740px; margin-bottom: 40px; color: var(--muted); font-size: 17px; }
+.app-preview { max-width: 920px; margin: 0 auto 42px; padding: 10px; border: 1px solid var(--line); border-radius: var(--radius-lg); background: var(--white); box-shadow: var(--shadow-lift); }
+.app-preview img { display: block; width: 100%; height: auto; border-radius: 20px; }
+.app-preview figcaption { padding: 12px 14px 4px; color: var(--muted); font-size: 13px; text-align: center; }
 .grille { display: grid; gap: 22px; }
 .grille-3 { grid-template-columns: repeat(3, minmax(0, 1fr)); }
 .grille-2 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
