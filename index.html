@@ -253,18 +253,18 @@
 
 <section class="section" id="contact">
   <div class="container">
-    <div class="cta-final">
+    <div class="cta-final contact-card">
       <h2>Une question ? Écrivez-nous.</h2>
       <p>Décrivez simplement votre question ou votre besoin. Votre message sera transmis à contact@factuserein.fr.</p>
-      <form id="c-form" style="max-width:520px;margin:0 auto;text-align:left;">
+      <form id="c-form">
         <label for="c-nom">Nom / Entreprise</label>
         <input type="text" id="c-nom" name="nom" required>
         <label for="c-email">Email</label>
         <input type="email" id="c-email" name="email" required>
         <label for="c-message">Votre message</label>
         <textarea id="c-message" name="message" rows="4" required></textarea>
-        <button type="submit" class="btn btn-vert" style="width:100%;margin-top:16px;">Envoyer mon message</button>
-        <p id="c-statut" style="font-size:13px;margin-top:10px"></p>
+        <button type="submit" class="btn btn-vert">Envoyer mon message</button>
+        <p id="c-statut"></p>
       </form>
       <script>
         document.getElementById('c-form').addEventListener('submit', async function (e) {
