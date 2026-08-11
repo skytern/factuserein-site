@@ -34,7 +34,7 @@ Le présent contrat définit les conditions de fourniture du service d'abonnemen
 
 ## ARTICLE 3 — DURÉE, REMBOURSEMENT ET RÉSILIATION
 
-1. **Remboursement intégral sous 14 jours** : sur simple demande (email avec accusé de réception) dans les 14 jours suivant le premier virement, le montant versé est intégralement remboursé (engagement commercial du Prestataire — les professionnels ne bénéficient pas du droit de rétractation légal).
+1. **Remboursement sous 14 jours si le compte n'a pas été activé** : sur simple demande (email avec accusé de réception) dans les 14 jours suivant le premier virement, le montant versé est intégralement remboursé (engagement commercial du Prestataire — pas de droit de rétractation légal pour les professionnels). Passé l'activation du compte (une facture transmise ou plus), les sommes versées restent acquises.
 2. **Formule mensuelle** : résiliable à tout moment par le Client (mois en cours dû) ; résiliation par le Prestataire moyennant un préavis de 30 jours notifié par email (le mois en cours restant dû).
 3. **Formule annuelle** : ferme et définitive passé le délai de 14 jours ; les sommes versées restent acquises, le service reste utilisable jusqu'au terme de l'année souscrite.
 4. En cas de résiliation, les factures déjà transmises restent archivées conformément à la réglementation sur la plateforme agréée ; le Client conserve l'accès en lecture aux documents archivés pendant la durée légale, dans les conditions de la plateforme partenaire.
