@@ -36,7 +36,7 @@ Le script publie le site, le dashboard et l'installeur desktop. Pour une publica
 - déploie automatiquement `main` vers S3 ;
 - invalide CloudFront après publication.
 
-Le workflow utilise GitHub OIDC avec le secret de dépôt `AWS_ROLE_ARN`. Il ne faut pas mettre de clé AWS longue durée dans GitHub. Le rôle IAM doit autoriser uniquement le dépôt et les actions S3/CloudFront nécessaires.
+Le workflow utilise GitHub OIDC avec le rôle `arn:aws:iam::826224348203:role/FactuSereinGitHubActionsDeploy`, déclaré directement dans le workflow. L'ARN n'est pas un secret ; les credentials AWS restent temporaires et ne sont jamais stockés dans GitHub. Le rôle IAM est limité au dépôt, à `main` et aux actions S3/CloudFront nécessaires.
 
 ## Images et design
 
@@ -44,7 +44,7 @@ Les images premium sont dans `assets/img/`. Toute nouvelle image doit être opti
 
 ## Roadmap
 
-1. Ajouter le secret `AWS_ROLE_ARN` et le trust policy OIDC IAM, puis vérifier le premier déploiement automatique.
+1. Vérifier le premier déploiement automatique GitHub avec le rôle OIDC déjà créé.
 2. Ajouter un contrôle des liens locaux et des tailles d'images dans la CI.
 3. Configurer un domaine CloudFront personnalisé si nécessaire et vérifier les en-têtes de cache.
 4. Ne pas présenter le formulaire comme un diagnostic tant qu'aucun questionnaire ou moteur de diagnostic n'est réellement implémenté.
