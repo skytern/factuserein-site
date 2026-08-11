@@ -88,11 +88,6 @@ a { color: var(--bleu); }
   background: rgba(255,255,255,.92); border: 1px solid #dbeafe; border-radius: 20px;
   padding: 30px; box-shadow: 0 14px 36px rgba(15,37,87,.10);
 }
-.hero-confiance-icon {
-  width: 54px; height: 54px; display: grid; place-items: center;
-  border-radius: 16px; background: var(--vert); color: #fff;
-  font-size: 30px; font-weight: 800; margin-bottom: 18px;
-}
 .hero-confiance-label { color: var(--vert-fonce); font-size: 14px; font-weight: 800; text-transform: uppercase; letter-spacing: .08em; }
 .hero-confiance h2 { color: var(--bleu); font-size: 24px; line-height: 1.25; margin: 8px 0; }
 .hero-confiance > p:not(.hero-confiance-label) { color: var(--texte-doux); }
@@ -175,7 +170,6 @@ td.non { color: var(--rouge); }
 }
 .encart.vert { background: #f0fdf4; border-color: #bbf7d0; }
 .encart.rouge { background: #fef2f2; border-color: #fecaca; }
-.puce-erreur { color: var(--rouge); font-weight: 600; }
 
 /* ---------- Formulaire ---------- */
 form label { display: block; font-weight: 600; margin: 14px 0 4px; }
@@ -184,13 +178,6 @@ form input, form select, form textarea {
   font-size: 15px; font-family: inherit; background: #fff;
 }
 form input:focus, form select:focus, form textarea:focus { outline: 2px solid var(--vert); border-color: transparent; }
-
-.zone-depot {
-  border: 2px dashed #94a3b8; border-radius: var(--radius); padding: 48px 20px;
-  text-align: center; background: #fff; cursor: pointer; transition: border-color .2s;
-}
-.zone-depot:hover { border-color: var(--vert); }
-.zone-depot .gros { font-size: 40px; margin-bottom: 8px; }
 
 /* ---------- Responsive ---------- */
 @media (max-width: 900px) {
@@ -211,8 +198,8 @@ form input:focus, form select:focus, form textarea:focus { outline: 2px solid va
 /* ---------- Illustrations ---------- */
 .illu { width: 100%; height: auto; border-radius: 12px; display: block; margin-bottom: 14px; }
 .illu-hero { max-width: 420px; margin: 0 auto 16px; width: 100%; height: auto; border-radius: 12px; }
-.illu-banniere { width: 100%; max-height: 300px; object-fit: cover; border-radius: 12px; margin: 18px 0 6px; }
-.illu-carte { max-width: 260px; margin: 0 auto 12px; width: 100%; height: auto; border-radius: 10px; }
+.illu-banniere { width: 100%; height: auto; border-radius: 12px; margin: 18px 0 6px; }
+.illu-carte { max-width: 260px; height: 170px; object-fit: contain; margin: 0 auto 12px; width: 100%; border-radius: 10px; }
 .illu-securite { max-width: 340px; margin: 14px auto 0; width: 100%; height: auto; border-radius: 12px; }
 
 /* Logo officiel facturation �lectronique (r�forme DGFiP) */
