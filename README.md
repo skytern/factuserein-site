@@ -19,6 +19,7 @@ Puis ouvrir `http://localhost:8080`.
 - Bucket S3 : `fs-front-826224348203` en `eu-west-3`
 - Distribution CloudFront : `E1MT8TEKETHVQ2`
 - URL de contrôle : `https://d2po7vfowy39cq.cloudfront.net/`
+- Domaine canonique choisi : `https://factuserein.fr/` (sans `www`, à rattacher ensuite à CloudFront)
 - Script de déploiement complet : `../factuserein-backend/scripts/deploy-fronts.ps1`
 
 Le script publie le site, le dashboard et l'installeur desktop. Pour une publication locale, fournir explicitement le chemin de l'installeur :

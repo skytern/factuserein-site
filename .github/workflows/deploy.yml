@@ -52,6 +52,15 @@ jobs:
           --exclude ".github/*"
           --exclude ".github/**"
           --exclude "docs/*"
+          --exclude "kit-commercial/*"
+          --exclude "kit-commercial/**"
+          --exclude "*.md"
+          --exclude ".git*"
           --exclude ".agents/*"
+          --exclude ".agents/**"
+      - name: Remove internal repository files from public bucket
+        run: |
+          aws s3 rm s3://${{ env.FRONT_BUCKET }}/kit-commercial/ --recursive --region ${{ env.AWS_REGION }}
+          aws s3 rm s3://${{ env.FRONT_BUCKET }}/README.md --region ${{ env.AWS_REGION }}
       - name: Invalidate CloudFront
         run: aws cloudfront create-invalidation --distribution-id ${{ env.CLOUDFRONT_DISTRIBUTION_ID }} --paths '/*'

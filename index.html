@@ -11,8 +11,11 @@
   <meta property="og:type" content="website">
   <meta property="og:title" content="FactuSerein — Facturation électronique obligatoire : on s'occupe de tout">
   <meta property="og:description" content="FactuSerein — Facturation électronique obligatoire : on s'occupe de tout">
-  <meta property="og:image" content="https://d2po7vfowy39cq.cloudfront.net/assets/img/android-chrome-192x192.png">
+  <meta property="og:image" content="https://factuserein.fr/assets/img/og-factuserein.png">
   <meta property="og:locale" content="fr_FR">
+  <meta property="og:url" content="https://factuserein.fr/">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="canonical" href="https://factuserein.fr/">
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
@@ -309,6 +312,36 @@
 </footer>
 
 <script src="assets/js/main.js"></script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://factuserein.fr/#organization",
+      "name": "FactuSerein",
+      "url": "https://factuserein.fr/",
+      "logo": "https://factuserein.fr/assets/img/logo.png",
+      "email": "contact@factuserein.fr",
+      "areaServed": "FR",
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "contactType": "customer support",
+        "email": "contact@factuserein.fr",
+        "availableLanguage": "fr"
+      }
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://factuserein.fr/#website",
+      "url": "https://factuserein.fr/",
+      "name": "FactuSerein",
+      "publisher": {"@id": "https://factuserein.fr/#organization"},
+      "inLanguage": "fr-FR"
+    }
+  ]
+}
+</script>
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
