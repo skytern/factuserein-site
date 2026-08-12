@@ -49,12 +49,12 @@
       <h2>Télécharger l'application Windows</h2>
       <p>Installez l'application, créez votre compte en quelques étapes guidées, puis déposez vos factures PDF. Le logiciel transfère vos fichiers au service, qui les prépare, les contrôle et suit leur traitement.</p>
       <p class="marge">
-        <a class="btn btn-vert download-button" href="https://d2po7vfowy39cq.cloudfront.net/download/FactuSerein_0.2.3_x64-setup.exe">
+        <a class="btn btn-vert download-button" href="https://d2po7vfowy39cq.cloudfront.net/download/FactuSerein_0.2.4_x64-setup.exe">
           ⬇ Télécharger pour Windows
         </a>
       </p>
       <p class="marge"><a href="#app-carousel">Voir les écrans réels de l'application →</a></p>
-       <p class="marge download-hash">Installeur Windows 64 bits · Windows 10 et 11 · SHA-256 : <code id="download-sha">e29dee3c66b911e1dea5c80b4c32f67527f09b24ed5244fb082856748aedd737</code></p>
+       <p class="marge download-hash">Installeur Windows 64 bits · Windows 10 et 11 · SHA-256 : <code id="download-sha">manifeste signé (chargement…)</code></p>
       </div>
     </div>
 
@@ -82,15 +82,19 @@
             <figcaption><strong>Réglages.</strong> La connexion, l'entreprise et l'accès aux documents du service sont regroupés au même endroit.</figcaption>
           </figure>
           <figure class="app-slide" data-slide aria-hidden="true">
-            <img src="../assets/img/app-screenshot-validation-review.png" alt="Vue de validation avec le PDF de facture à gauche et les champs de l'émetteur et du client à droite" width="1440" height="1000" loading="lazy">
-            <figcaption><strong>Vérification d'une facture.</strong> Le PDF reste visible à gauche pendant que les informations de l'émetteur et du destinataire sont contrôlées à droite.</figcaption>
+            <img src="../assets/img/app-screenshot-validation-review.png" alt="Vue de validation avec un PDF agrandi à gauche et les lignes et totaux contrôlés à droite" width="1440" height="1000" loading="lazy">
+            <figcaption><strong>Lignes et totaux.</strong> Le PDF reste lisible à gauche, avec zoom natif, pendant que chaque ligne est recalculée à droite.</figcaption>
           </figure>
           <figure class="app-slide" data-slide aria-hidden="true">
-            <img src="../assets/img/app-screenshot-validation-details.png" alt="Détail des informations de facture avec numéro, dates, totaux et ligne de facture" width="528" height="583" loading="lazy">
-            <figcaption><strong>Informations de facture.</strong> Numéro, dates, totaux et lignes restent éditables avant la transmission.</figcaption>
+            <img src="../assets/img/app-screenshot-validation-emitter.png" alt="Étape Émetteur avec le profil de l'entreprise reconnu en vert" width="1440" height="1000" loading="lazy">
+            <figcaption><strong>Émetteur reconnu.</strong> Le profil enregistré est comparé au SIREN de la facture avant toute transmission.</figcaption>
           </figure>
           <figure class="app-slide" data-slide aria-hidden="true">
-            <img src="../assets/img/app-screenshot-validation-error.png" alt="Vue de validation affichant les champs manquants en rouge et le détail de la relance IA" width="1440" height="1000" loading="lazy">
+            <img src="../assets/img/app-screenshot-validation-details.png" alt="Détail de l'étape lignes et totaux avec le recalcul indépendant" width="548" height="583" loading="lazy">
+            <figcaption><strong>Contrôle indépendant.</strong> Les lignes, la TVA et le TTC sont recalculés puis affichés avec les champs éditables.</figcaption>
+          </figure>
+          <figure class="app-slide" data-slide aria-hidden="true">
+            <img src="../assets/img/app-screenshot-validation-error.png" alt="Vue de validation affichant les totaux incohérents en rouge avant l'envoi" width="1440" height="1000" loading="lazy">
             <figcaption><strong>Cas à corriger.</strong> Les champs manquants, divergences et détails de relance sont expliqués avant tout envoi.</figcaption>
           </figure>
           <figure class="app-slide" data-slide aria-hidden="true">
@@ -104,10 +108,11 @@
             <button class="carousel-dot is-active" type="button" data-carousel-dot="0" role="tab" aria-selected="true" aria-label="Afficher la capture Accueil"></button>
             <button class="carousel-dot" type="button" data-carousel-dot="1" role="tab" aria-selected="false" aria-label="Afficher la capture Clients"></button>
             <button class="carousel-dot" type="button" data-carousel-dot="2" role="tab" aria-selected="false" aria-label="Afficher la capture Réglages"></button>
-            <button class="carousel-dot" type="button" data-carousel-dot="3" role="tab" aria-selected="false" aria-label="Afficher la capture Vérification facture"></button>
-            <button class="carousel-dot" type="button" data-carousel-dot="4" role="tab" aria-selected="false" aria-label="Afficher la capture Informations facture"></button>
-            <button class="carousel-dot" type="button" data-carousel-dot="5" role="tab" aria-selected="false" aria-label="Afficher la capture Erreur et champs manquants"></button>
-            <button class="carousel-dot" type="button" data-carousel-dot="6" role="tab" aria-selected="false" aria-label="Afficher la capture Facture scannée"></button>
+            <button class="carousel-dot" type="button" data-carousel-dot="3" role="tab" aria-selected="false" aria-label="Afficher la capture Lignes et totaux"></button>
+            <button class="carousel-dot" type="button" data-carousel-dot="4" role="tab" aria-selected="false" aria-label="Afficher la capture Émetteur reconnu"></button>
+            <button class="carousel-dot" type="button" data-carousel-dot="5" role="tab" aria-selected="false" aria-label="Afficher la capture Contrôle indépendant"></button>
+            <button class="carousel-dot" type="button" data-carousel-dot="6" role="tab" aria-selected="false" aria-label="Afficher la capture Erreur et champs manquants"></button>
+            <button class="carousel-dot" type="button" data-carousel-dot="7" role="tab" aria-selected="false" aria-label="Afficher la capture Facture scannée"></button>
           </div>
           <button class="carousel-arrow" type="button" data-carousel-next aria-label="Capture suivante">→</button>
         </div>
@@ -142,7 +147,7 @@
       </ul>
     </div>
 
-    <p class="marge" style="text-align:center"><a href="https://d2po7vfowy39cq.cloudfront.net/download/FactuSerein_0.2.3_x64-setup.exe" class="btn btn-vert">Télécharger l'application</a></p>
+    <p class="marge" style="text-align:center"><a href="https://d2po7vfowy39cq.cloudfront.net/download/FactuSerein_0.2.4_x64-setup.exe" class="btn btn-vert">Télécharger l'application</a></p>
   </div>
  </section>
 
@@ -195,9 +200,9 @@
   "name": "FactuSerein pour Windows",
   "applicationCategory": "BusinessApplication",
   "operatingSystem": "Windows 10, Windows 11",
-  "softwareVersion": "0.2.3",
+  "softwareVersion": "0.2.4",
   "url": "https://factuserein.fr/outils/telecharger.html",
-  "downloadUrl": "https://d2po7vfowy39cq.cloudfront.net/download/FactuSerein_0.2.3_x64-setup.exe",
+  "downloadUrl": "https://d2po7vfowy39cq.cloudfront.net/download/FactuSerein_0.2.4_x64-setup.exe",
   "offers": [
     {"@type": "Offer", "price": "24", "priceCurrency": "EUR", "description": "Offre Essentiel, prix mensuel HT"},
     {"@type": "Offer", "price": "59", "priceCurrency": "EUR", "description": "Offre Pro, prix mensuel HT"}
