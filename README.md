@@ -26,7 +26,7 @@ Le script publie le site, le dashboard et l'installeur desktop. Pour une publica
 
 ```powershell
 & ..\factuserein-backend\scripts\deploy-fronts.ps1 `
-  -InstallerPath ..\factuserein-client\src-tauri\target\release\bundle\nsis\FactuSerein_0.2.1_x64-setup.exe
+  -InstallerPath ..\factuserein-client\src-tauri\target\release\bundle\nsis\FactuSerein_0.2.3_x64-setup.exe
 ```
 
 En attendant la distribution `app` du lot 2, l'installeur et

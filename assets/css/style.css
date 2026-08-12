@@ -101,6 +101,26 @@ a:hover { color: var(--green-700); }
 .app-preview { max-width: 920px; margin: 0 auto 42px; padding: 10px; border: 1px solid var(--line); border-radius: var(--radius-lg); background: var(--white); box-shadow: var(--shadow-lift); }
 .app-preview img { display: block; width: 100%; height: auto; border-radius: 20px; }
 .app-preview figcaption { padding: 12px 14px 4px; color: var(--muted); font-size: 13px; text-align: center; }
+.app-carousel-section { max-width: 1040px; margin: 92px auto 0; }
+.app-carousel-heading { display: flex; align-items: end; justify-content: space-between; gap: 28px; margin-bottom: 28px; }
+.app-carousel-heading h2 { margin-bottom: 12px; }
+.app-carousel-heading .sous-titre { margin-bottom: 0; }
+.eyebrow { margin-bottom: 8px; color: var(--green-700); font-size: 12px; font-weight: 900; letter-spacing: .1em; text-transform: uppercase; }
+.capture-badge { flex: 0 0 auto; padding: 8px 13px; border: 1px solid #b7dfc4; border-radius: 999px; background: var(--green-100); color: var(--green-700); font-size: 12px; font-weight: 800; white-space: nowrap; }
+.app-carousel { overflow: hidden; padding: 14px; border: 1px solid #d5e0ee; border-radius: var(--radius-lg); background: var(--navy-950); box-shadow: var(--shadow-lift); }
+.app-carousel-viewport { min-width: 0; }
+.app-slide { display: none; margin: 0; }
+.app-slide.is-active { display: block; animation: carousel-in .22s ease-out; }
+.app-slide img { display: block; width: 100%; max-height: 720px; border-radius: 18px; background: #eef3fa; object-fit: contain; }
+.app-slide figcaption { padding: 16px 8px 4px; color: #dbe7fb; font-size: 14px; text-align: center; }
+.app-slide figcaption strong { color: var(--white); }
+.app-carousel-controls { display: flex; align-items: center; justify-content: space-between; gap: 16px; padding: 16px 4px 2px; }
+.carousel-arrow { display: inline-flex; align-items: center; justify-content: center; width: 42px; height: 42px; min-height: 42px; padding: 0; border: 1px solid rgba(255,255,255,.2); border-radius: 50%; background: rgba(255,255,255,.1); color: var(--white); font-size: 20px; line-height: 1; }
+.carousel-arrow:hover { background: rgba(255,255,255,.2); }
+.carousel-dots { display: flex; align-items: center; justify-content: center; gap: 9px; }
+.carousel-dot { width: 10px; height: 10px; min-height: 10px; padding: 0; border: 0; border-radius: 50%; background: #9bb1d0; cursor: pointer; }
+.carousel-dot.is-active { width: 28px; border-radius: 999px; background: var(--green-600); }
+@keyframes carousel-in { from { opacity: .55; transform: translateY(5px); } to { opacity: 1; transform: translateY(0); } }
 .grille { display: grid; gap: 22px; }
 .grille-3 { grid-template-columns: repeat(3, minmax(0, 1fr)); }
 .grille-2 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
@@ -155,7 +175,7 @@ td { color: var(--muted); }
 .contact-card #c-statut { margin-top: 10px; color: var(--muted); font-size: 13px; text-align: center; }
 .download-layout { display: grid; grid-template-columns: minmax(0, .92fr) minmax(0, 1.08fr); align-items: center; gap: clamp(24px, 5vw, 56px); max-width: 1100px; margin: 0 auto; }
 .download-visual { width: 100%; max-width: 560px; height: auto; margin: 0 auto; border-radius: var(--radius-md); box-shadow: var(--shadow-soft); }
-.download-card { width: 100%; max-width: none; margin: 0; padding: clamp(32px, 6vw, 58px) clamp(22px, 6vw, 72px); border: 1px solid #cfe4d8; background: linear-gradient(145deg, #f4fbf6 0%, #edf5fc 100%); color: var(--ink); box-shadow: 0 18px 44px rgba(15, 37, 87, .1); }
+.download-card { width: 100%; max-width: none; margin: 0; padding: clamp(32px, 6vw, 58px) clamp(22px, 6vw, 72px); border: 1px solid #d5e0ee; background: var(--white); color: var(--ink); box-shadow: 0 18px 44px rgba(15, 37, 87, .1); }
 .download-card h2 { color: var(--navy-900); }
 .download-card > p { color: var(--muted); }
 .download-card .download-button { min-height: 54px; padding: 14px 30px; font-size: 18px; }
@@ -181,6 +201,8 @@ form input:focus, form select:focus, form textarea:focus { outline: 3px solid rg
   .hero-confiance { max-width: 680px; }
   .download-layout { grid-template-columns: 1fr; gap: 28px; }
   .download-visual { max-width: 560px; }
+  .app-carousel-heading { display: block; }
+  .capture-badge { display: inline-block; margin-top: 18px; }
   .grille-3, .grille-2 { grid-template-columns: 1fr; }
   .section { padding: 68px 0; }
   .site-footer .container { grid-template-columns: 1fr 1fr; }
@@ -199,6 +221,10 @@ form input:focus, form select:focus, form textarea:focus { outline: 3px solid rg
   .illu-carte { width: calc(100% + 44px); height: 190px; margin: -22px -22px 22px; }
   .illu { height: 180px; }
   .download-visual { height: auto; }
+  .app-carousel-section { margin-top: 68px; }
+  .app-carousel { padding: 8px; border-radius: var(--radius-md); }
+  .app-slide img { border-radius: 12px; }
+  .app-carousel-controls { padding-top: 12px; }
   .page-titre { padding: 46px 0 40px; }
   table { display: block; overflow-x: auto; white-space: normal; }
   th, td { min-width: 170px; padding: 12px 14px; }

@@ -49,4 +49,38 @@
       }
     });
   });
+
+  // Captures de l'application sur la page Télécharger
+  document.querySelectorAll("[data-carousel]").forEach(function (carousel) {
+    var slides = Array.prototype.slice.call(carousel.querySelectorAll("[data-slide]"));
+    var dots = Array.prototype.slice.call(carousel.querySelectorAll("[data-carousel-dot]"));
+    var current = 0;
+    if (slides.length < 2) return;
+
+    function afficher(index) {
+      current = (index + slides.length) % slides.length;
+      slides.forEach(function (slide, position) {
+        var actif = position === current;
+        slide.classList.toggle("is-active", actif);
+        slide.setAttribute("aria-hidden", actif ? "false" : "true");
+      });
+      dots.forEach(function (dot, position) {
+        var actif = position === current;
+        dot.classList.toggle("is-active", actif);
+        dot.setAttribute("aria-selected", actif ? "true" : "false");
+      });
+    }
+
+    var precedent = carousel.querySelector("[data-carousel-prev]");
+    var suivant = carousel.querySelector("[data-carousel-next]");
+    if (precedent) precedent.addEventListener("click", function () { afficher(current - 1); });
+    if (suivant) suivant.addEventListener("click", function () { afficher(current + 1); });
+    dots.forEach(function (dot) {
+      dot.addEventListener("click", function () { afficher(Number(dot.getAttribute("data-carousel-dot"))); });
+    });
+    carousel.addEventListener("keydown", function (event) {
+      if (event.key === "ArrowLeft") { event.preventDefault(); afficher(current - 1); }
+      if (event.key === "ArrowRight") { event.preventDefault(); afficher(current + 1); }
+    });
+  });
 })();
