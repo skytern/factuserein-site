@@ -108,11 +108,12 @@ a:hover { color: var(--green-700); }
 .eyebrow { margin-bottom: 8px; color: var(--green-700); font-size: 12px; font-weight: 900; letter-spacing: .1em; text-transform: uppercase; }
 .capture-badge { flex: 0 0 auto; padding: 8px 13px; border: 1px solid #b7dfc4; border-radius: 999px; background: var(--green-100); color: var(--green-700); font-size: 12px; font-weight: 800; white-space: nowrap; }
 .app-carousel { overflow: hidden; padding: 14px; border: 1px solid #d5e0ee; border-radius: var(--radius-lg); background: var(--navy-950); box-shadow: var(--shadow-lift); }
-.app-carousel-viewport { min-width: 0; }
-.app-slide { display: none; margin: 0; }
+.app-carousel-viewport { position: relative; min-width: 0; height: clamp(300px, 56vw, 720px); overflow: hidden; }
+.app-slide { position: absolute; inset: 0; display: none; grid-template-rows: minmax(0, 1fr) 50px; margin: 0; }
 .app-slide.is-active { display: block; animation: carousel-in .22s ease-out; }
-.app-slide img { display: block; width: 100%; max-height: 720px; border-radius: 18px; background: #eef3fa; object-fit: contain; }
-.app-slide figcaption { padding: 16px 8px 4px; color: #dbe7fb; font-size: 14px; text-align: center; }
+.app-slide.is-active { display: grid; }
+.app-slide img { display: block; width: 100%; height: 100%; min-height: 0; border-radius: 18px; background: #eef3fa; object-fit: contain; }
+.app-slide figcaption { display: flex; align-items: center; justify-content: center; height: 50px; overflow: hidden; padding: 8px; color: #dbe7fb; font-size: 14px; line-height: 1.3; text-align: center; }
 .app-slide figcaption strong { color: var(--white); }
 .app-carousel-controls { display: flex; align-items: center; justify-content: space-between; gap: 16px; padding: 16px 4px 2px; }
 .carousel-arrow { display: inline-flex; align-items: center; justify-content: center; width: 42px; height: 42px; min-height: 42px; padding: 0; border: 1px solid rgba(255,255,255,.2); border-radius: 50%; background: rgba(255,255,255,.1); color: var(--white); font-size: 20px; line-height: 1; }
@@ -223,6 +224,7 @@ form input:focus, form select:focus, form textarea:focus { outline: 3px solid rg
   .download-visual { height: auto; }
   .app-carousel-section { margin-top: 68px; }
   .app-carousel { padding: 8px; border-radius: var(--radius-md); }
+  .app-carousel-viewport { height: clamp(270px, 70vw, 520px); }
   .app-slide img { border-radius: 12px; }
   .app-carousel-controls { padding-top: 12px; }
   .page-titre { padding: 46px 0 40px; }
