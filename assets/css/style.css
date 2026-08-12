@@ -117,7 +117,7 @@ a:hover { color: var(--green-700); }
 .app-carousel-controls { display: flex; align-items: center; justify-content: space-between; gap: 16px; padding: 16px 4px 2px; }
 .carousel-arrow { display: inline-flex; align-items: center; justify-content: center; width: 42px; height: 42px; min-height: 42px; padding: 0; border: 1px solid rgba(255,255,255,.2); border-radius: 50%; background: rgba(255,255,255,.1); color: var(--white); font-size: 20px; line-height: 1; }
 .carousel-arrow:hover { background: rgba(255,255,255,.2); }
-.carousel-dots { display: flex; align-items: center; justify-content: center; gap: 9px; }
+.carousel-dots { display: flex; align-items: center; justify-content: center; gap: 9px; flex-wrap: wrap; }
 .carousel-dot { width: 10px; height: 10px; min-height: 10px; padding: 0; border: 0; border-radius: 50%; background: #9bb1d0; cursor: pointer; }
 .carousel-dot.is-active { width: 28px; border-radius: 999px; background: var(--green-600); }
 @keyframes carousel-in { from { opacity: .55; transform: translateY(5px); } to { opacity: 1; transform: translateY(0); } }
