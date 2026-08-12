@@ -21,15 +21,19 @@ jobs:
       - uses: actions/checkout@v4
       - name: Validate JavaScript
         run: node --check assets/js/main.js
+      - name: Validate HTML, SEO, links, images and JSON-LD
+        run: python3 scripts/validate_site.py
       - name: Validate required entry points
         run: |
           test -f index.html
           test -f assets/css/style.css
           test -f assets/js/main.js
           test -f assets/img/hero-premium.webp
+          test -f legal/cgv.html
+          test -f scripts/validate_site.py
 
   deploy:
-    if: github.event_name != 'pull_request'
+    if: (github.event_name == 'push' && github.ref == 'refs/heads/main') || (github.event_name == 'workflow_dispatch' && github.ref == 'refs/heads/main')
     needs: validate
     runs-on: ubuntu-latest
     permissions:
@@ -54,6 +58,8 @@ jobs:
           --exclude "docs/*"
           --exclude "kit-commercial/*"
           --exclude "kit-commercial/**"
+          --exclude "scripts/*"
+          --exclude "scripts/**"
           --exclude "*.md"
           --exclude ".git*"
           --exclude ".agents/*"
@@ -61,6 +67,7 @@ jobs:
       - name: Remove internal repository files from public bucket
         run: |
           aws s3 rm s3://${{ env.FRONT_BUCKET }}/kit-commercial/ --recursive --region ${{ env.AWS_REGION }}
+          aws s3 rm s3://${{ env.FRONT_BUCKET }}/scripts/ --recursive --region ${{ env.AWS_REGION }}
           aws s3 rm s3://${{ env.FRONT_BUCKET }}/README.md --region ${{ env.AWS_REGION }}
       - name: Invalidate CloudFront
         run: aws cloudfront create-invalidation --distribution-id ${{ env.CLOUDFRONT_DISTRIBUTION_ID }} --paths '/*'

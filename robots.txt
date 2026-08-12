@@ -3,4 +3,6 @@ Allow: /
 Disallow: /kit-commercial/
 Disallow: /docs/
 Disallow: /README.md
+Disallow: /.github/
+Disallow: /outils/validateur.html
 Sitemap: https://factuserein.fr/sitemap.xml
