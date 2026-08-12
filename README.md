@@ -29,6 +29,10 @@ Le script publie le site, le dashboard et l'installeur desktop. Pour une publica
   -InstallerPath ..\factuserein-client\src-tauri\target\release\bundle\nsis\FactuSerein_0.2.1_x64-setup.exe
 ```
 
+En attendant la distribution `app` du lot 2, l'installeur et
+`updates/latest.json` sont aussi publiés dans le bucket front et servis par
+CloudFront. La page de téléchargement lit le SHA-256 depuis ce manifeste signé.
+
 ## GitHub Actions
 
 `.github/workflows/deploy.yml` :

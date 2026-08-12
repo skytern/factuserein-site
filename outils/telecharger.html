@@ -54,7 +54,7 @@
         </a>
       </p>
       <p class="marge"><a href="../index.html#app-preview">Voir une capture réelle de l'application →</a></p>
-      <p class="marge download-hash">Installeur Windows 64 bits · Windows 10 et 11 · SHA-256 : e6176e8c94ca6e2404064104f291e6cb9bbb042412a1193e3e2d229675b3addc</p>
+       <p class="marge download-hash">Installeur Windows 64 bits · Windows 10 et 11 · SHA-256 : <code id="download-sha">récupération du manifeste signé…</code></p>
       </div>
     </div>
 
@@ -88,9 +88,26 @@
 
     <p class="marge" style="text-align:center"><a href="https://d2po7vfowy39cq.cloudfront.net/download/FactuSerein_0.2.1_x64-setup.exe" class="btn btn-vert">Télécharger l'application</a></p>
   </div>
-</section>
+ </section>
 
-<footer class="site-footer">
+ <script>
+   (() => {
+     const empreinte = document.getElementById('download-sha');
+     if (!empreinte) return;
+     fetch('/updates/latest.json', { cache: 'no-store' })
+       .then((reponse) => {
+         if (!reponse.ok) throw new Error('manifeste indisponible');
+         return reponse.json();
+       })
+       .then((manifeste) => {
+         if (!/^[0-9a-f]{64}$/i.test(manifeste.sha256 || '')) throw new Error('empreinte invalide');
+         empreinte.textContent = manifeste.sha256.toLowerCase();
+       })
+       .catch(() => { empreinte.textContent = 'voir le manifeste signé'; });
+   })();
+ </script>
+
+ <footer class="site-footer">
   <div class="container">
     <div>
       <h4>FactuSerein</h4>
