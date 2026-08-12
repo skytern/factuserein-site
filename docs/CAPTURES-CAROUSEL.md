@@ -2,6 +2,11 @@
 
 Le carousel de `outils/telecharger.html` présente des captures réelles de l'interface Windows. Les données affichées doivent rester fictives ou anonymisées.
 
+`app-screenshot-tauri-settings.png` est une capture de la vraie fenêtre Tauri
+Windows, sans chemin utilisateur ni donnée personnelle. Les captures de
+validation sont prises sur l'interface de contrôle du service avec des
+factures synthétiques.
+
 ## Ajouter une capture
 
 1. Déposer l'image PNG dans `assets/img/` avec un nom explicite, par exemple `app-screenshot-validation-history.png`.
