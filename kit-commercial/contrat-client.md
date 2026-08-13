@@ -23,11 +23,11 @@ Le présent contrat définit les conditions de fourniture du service d'abonnemen
 
 | Offre | Mensuel HT | Annuel HT (1 mois offert) |
 |---|---|---|
-| Conformité Micro (jusqu'à 100 factures/mois) | 24,00 € | 264,00 € |
-| Conformité Pro (jusqu'à 1 000 factures/mois) | 59,00 € | 649,00 € |
+| Essentiel (jusqu'à 100 factures/mois) | 24,00 € | 264,00 € |
+| Pro (jusqu'à 1 000 factures/mois) | 59,00 € | 649,00 € |
 
-- Offre souscrite : ☐ Conformité Micro ☐ Conformité Pro
-- Formule souscrite : ☐ Mensuelle (28,80 € TTC micro / 70,80 € TTC pro) ☐ Annuelle (316,80 € TTC micro / 778,80 € TTC pro — 11 mois facturés, 1 mois offert)
+- Offre souscrite : ☐ Essentiel ☐ Pro
+- Formule souscrite : ☐ Mensuelle (28,80 € TTC Essentiel / 70,80 € TTC Pro) ☐ Annuelle (316,80 € TTC Essentiel / 778,80 € TTC Pro — 11 mois facturés, 1 mois offert)
 - Aucun frais d'initialisation. Virement initial avant mise en service ; mensuel à terme échu, annuel prépayé.
 - TVA : 20 % appliquée (factures émises par le Prestataire).
 - Au-delà de 1 000 factures/mois : devis spécifique.

@@ -54,7 +54,7 @@
 
 **Risque principal identifié :** ______________________________________________________
 
-**Offre recommandée :** ☐ Conformité Micro (24 €/mois HT ou 264 €/an HT — 1 mois offert) ☐ Conformité Pro (59 €/mois HT ou 649 €/an HT) ☐ Devis spécifique
+**Offre recommandée :** ☐ Essentiel (24 €/mois HT ou 264 €/an HT — 1 mois offert) ☐ Pro (59 €/mois HT ou 649 €/an HT) ☐ Devis spécifique
 
 **Prochaine action :** ☐ Envoi du devis ☐ Démo ☐ Relance le __/__/2026
 

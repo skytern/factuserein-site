@@ -29,7 +29,7 @@
     function maj() {
       var diff = cible - new Date();
       if (diff <= 0) {
-        elJours.textContent = "Échéance passée — nous sommes toujours là pour vous mettre en conformité";
+        elJours.textContent = "Depuis le 1er septembre 2026 : réception des factures électroniques";
         return;
       }
       var jours = Math.ceil(diff / 86400000);
