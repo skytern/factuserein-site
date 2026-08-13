@@ -2,6 +2,11 @@
 
 Le carousel de `outils/telecharger.html` présente des captures réelles de l'interface Windows. Les données affichées doivent rester fictives ou anonymisées.
 
+Les captures publiées dans le carousel utilisent le même cadre `1440×1000` afin
+que le passage d'un écran à l'autre ne déplace pas la page. Un recadrage de
+détail peut rester dans le dépôt pour la documentation interne, mais ne doit
+pas être utilisé comme slide public.
+
 `app-screenshot-tauri-settings.png` est une capture de la vraie fenêtre Tauri
 Windows, sans chemin utilisateur ni donnée personnelle. Les captures de
 validation sont prises sur l'interface de contrôle du service avec des
