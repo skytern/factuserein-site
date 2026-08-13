@@ -34,7 +34,7 @@
       }
       var jours = Math.ceil(diff / 86400000);
       elJours.textContent =
-        "Obligation de réception des factures électroniques : 1er septembre 2026 — plus que " + jours + " jours";
+        "Réception obligatoire à partir du 1er septembre 2026 — plus que " + jours + " jours";
     }
     maj();
   }

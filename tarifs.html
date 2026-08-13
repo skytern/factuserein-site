@@ -60,7 +60,8 @@
           <li>Réception des factures fournisseurs + carnet de destinataires</li>
           <li>Suivi et conservation selon l'offre et le contrat</li>
           <li>Questions par email si nécessaire</li>
-          <li>Veille réglementaire (échéances 2026-2027, e-reporting)</li>
+          <li>Veille réglementaire (échéances 2026-2027)</li>
+          <li>Option e-reporting de paiement disponible selon votre activité et votre régime de TVA, sans données bancaires</li>
         </ul>
         <p class="marge"><a href="outils/telecharger.html" class="btn btn-outline">Télécharger l'application</a></p>
       </div>
@@ -70,7 +71,7 @@
         <p class="prix">59 €<span> /mois HT</span></p>
         <p class="entretien">Mensuel : 70,80 € TTC · Annuel (1 mois offert) : <strong>649 € HT</strong> — 778,80 € TTC · remboursement 14 jours</p>
         <ul>
-          <li>Inclut les fonctionnalités de la formule Micro</li>
+          <li>Inclut les fonctionnalités de la formule Essentiel</li>
           <li>Jusqu'à 1 000 factures / mois (émises + reçues)</li>
         </ul>
         <p class="marge"><a href="outils/telecharger.html" class="btn btn-vert">Télécharger l'application</a></p>
@@ -80,7 +81,7 @@
     <h2 class="marge">Inclus dans les deux formules</h2>
     <table class="marge">
       <thead>
-        <tr><th></th><th>Micro</th><th>Pro</th></tr>
+        <tr><th></th><th>Essentiel</th><th>Pro</th></tr>
       </thead>
       <tbody>
         <tr><td>Dépôt de factures PDF dans un dossier / fenêtre d'application</td><td class="ok">✓</td><td class="ok">✓</td></tr>
@@ -91,7 +92,8 @@
         <tr><td>Suivi des statuts et alertes de rejet</td><td class="ok">✓</td><td class="ok">✓</td></tr>
         <tr><td>Réception des factures fournisseurs + carnet de destinataires</td><td class="ok">✓</td><td class="ok">✓</td></tr>
         <tr><td>Questions par email si nécessaire</td><td class="ok">✓</td><td class="ok">✓</td></tr>
-        <tr><td>Veille réglementaire (e-reporting 2027, évolutions)</td><td class="ok">✓</td><td class="ok">✓</td></tr>
+        <tr><td>Veille réglementaire (échéances 2026-2027, évolutions)</td><td class="ok">✓</td><td class="ok">✓</td></tr>
+        <tr><td>Option e-reporting de paiement si activité et régime éligibles</td><td>Disponible</td><td>Disponible</td></tr>
         <tr><td>Déclaration de votre plateforme de réception dans l'annuaire officiel</td><td class="ok">✓</td><td class="ok">✓</td></tr>
       </tbody>
     </table>
@@ -109,6 +111,14 @@
       <details>
         <summary>Le prix inclut-il la plateforme partenaire ?</summary>
         <p>Le périmètre inclus est indiqué dans chaque offre et dans la version contractuelle affichée avant souscription. L'identité et le rôle exacts de la plateforme partenaire doivent être confirmés dans la documentation du compte.</p>
+      </details>
+      <details>
+        <summary>L'e-reporting de paiement est-il obligatoire pour tout le monde ?</summary>
+        <p>Non. L'option concerne certaines prestations de services et certains acomptes soumis à la TVA à l'encaissement. Elle est désactivée par défaut, activable dans l'application après confirmation de votre situation et hors périmètre B2C/international dans cette version.</p>
+      </details>
+      <details>
+        <summary>Dois-je fournir mes coordonnées bancaires ?</summary>
+        <p>Non. Vous saisissez la date et le montant de l'encaissement, ainsi qu'une ventilation de TVA si nécessaire. Aucun IBAN ni relevé bancaire n'est demandé.</p>
       </details>
       <details>
         <summary>Les tarifs sont-ils en HT ou TTC ?</summary>
@@ -138,6 +148,7 @@
       <a href="legal/cgv.html">CGV B2B</a>
       <a href="mailto:contact@factuserein.fr">contact@factuserein.fr</a>
     </div>
+    <img class="logo-officiel" src="assets/img/solution-compatible.png" alt="Logo Solution compatible — Facturation électronique" width="230" height="107" loading="lazy">
     <p class="mentions">© <span class="js-annee">2026</span> FactuSerein — Aix-en-Provence. Transmission via une plateforme agréée partenaire.</p>
   </div>
 </footer>
@@ -150,7 +161,9 @@
   "mainEntity": [
     {"@type": "Question", "name": "Y a-t-il un engagement de durée ?", "acceptedAnswer": {"@type": "Answer", "text": "Mensuel : sans engagement, résiliable à tout moment (mois en cours dû). Annuel : Remboursement sous 14 jours si le compte n'est pas activé, puis formule ferme jusqu'au terme de l'année (1 mois offert)."}},
     {"@type": "Question", "name": "Le prix inclut-il la plateforme partenaire ?", "acceptedAnswer": {"@type": "Answer", "text": "Le périmètre inclus est précisé dans l'offre et dans la version contractuelle affichée avant souscription."}},
-    {"@type": "Question", "name": "Et si je dépasse 1 000 factures par mois ?", "acceptedAnswer": {"@type": "Answer", "text": "Offre sur-mesure au-delà (PME, ETI). Devis selon votre volume et vos besoins."}}
+    {"@type": "Question", "name": "Et si je dépasse 1 000 factures par mois ?", "acceptedAnswer": {"@type": "Answer", "text": "Offre sur-mesure au-delà (PME, ETI). Devis selon votre volume et vos besoins."}},
+    {"@type": "Question", "name": "L'e-reporting de paiement est-il obligatoire pour tout le monde ?", "acceptedAnswer": {"@type": "Answer", "text": "Non. L'option concerne certaines prestations de services et certains acomptes soumis à la TVA à l'encaissement. Elle est désactivée par défaut et activable dans l'application après confirmation de la situation."}},
+    {"@type": "Question", "name": "Dois-je fournir mes coordonnées bancaires ?", "acceptedAnswer": {"@type": "Answer", "text": "Non. L'application demande la date et le montant de l'encaissement, ainsi qu'une ventilation de TVA si nécessaire ; aucun IBAN ni relevé bancaire n'est demandé."}}
   ]
 }
 </script>
