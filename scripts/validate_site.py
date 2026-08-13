@@ -17,6 +17,20 @@ from xml.etree import ElementTree
 ROOT = Path(__file__).resolve().parents[1]
 PUBLIC_EXCLUDED_PARTS = {".git", ".github", ".agents", "docs", "kit-commercial"}
 CANONICAL_ORIGIN = "https://factuserein.fr"
+TRANSFER_VALIDATION_PHRASE = (
+    "Le PDF est transféré automatiquement à FactuSerein pour analyse. La transmission finale de la facture reste toujours validée manuellement par vous."
+)
+PRODUCT_FEATURE_TERMS = (
+    "factures",
+    "avoirs",
+    "factures correctives",
+    "acomptes",
+    "promotions",
+    "remises",
+    "frais",
+    "CII",
+    "adresses de livraison",
+)
 
 
 class PageParser(HTMLParser):
@@ -261,6 +275,30 @@ def check_javascript(errors: list[str], parsed_pages: dict[Path, PageParser]) ->
             errors.append(f"{label}: JavaScript invalide: {' '.join(detail)}")
 
 
+def check_product_claims(errors: list[str]) -> None:
+    """Keep the public product claims aligned across the commercial pages."""
+
+    required_phrase_pages = (
+        ROOT / "index.html",
+        ROOT / "comment-ca-marche.html",
+        ROOT / "outils" / "telecharger.html",
+    )
+    for page in required_phrase_pages:
+        content = page.read_text(encoding="utf-8")
+        if TRANSFER_VALIDATION_PHRASE not in content:
+            errors.append(f"{page.relative_to(ROOT)}: phrase transfert/validation manquante")
+
+    homepage = (ROOT / "index.html").read_text(encoding="utf-8").lower()
+    for term in PRODUCT_FEATURE_TERMS:
+        if term.lower() not in homepage:
+            errors.append(f"index.html: fonctionnalité publique manquante: {term}")
+
+    for page in (ROOT / "index.html", ROOT / "tarifs.html", ROOT / "outils" / "telecharger.html"):
+        content = page.read_text(encoding="utf-8").lower()
+        if "e-reporting d'encaissements" not in content:
+            errors.append(f"{page.relative_to(ROOT)}: libellé e-reporting d'encaissements absent")
+
+
 def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.parse_args()
@@ -268,6 +306,7 @@ def main() -> int:
     parsed_pages = check_pages(errors)
     check_sitemap(errors, parsed_pages)
     check_javascript(errors, parsed_pages)
+    check_product_claims(errors)
 
     if errors:
         print("Site validation failed:", file=sys.stderr)

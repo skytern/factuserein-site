@@ -115,27 +115,60 @@
         <img class="illu" src="assets/img/etape2-premium.webp" alt="Un professionnel compare une facture avec une liste de vérification" width="1536" height="1024" loading="lazy">
         <div class="num">2</div>
         <h3>Contrôle automatique</h3>
-        <p>Le service extrait les champs par deux canaux (vision + texte), compare les informations et signale les divergences avant votre validation. Les données sont ensuite préparées pour la transmission.</p>
+        <p>Le service extrait les champs par deux canaux (vision + texte), compare les informations et signale les divergences avant la validation manuelle finale. Les données sont ensuite préparées pour la transmission.</p>
       </div>
       <div class="carte">
         <img class="illu" src="assets/img/etape3-premium.webp" alt="Une facture suit un chemin sécurisé jusqu'à son archivage" width="1536" height="1024" loading="lazy">
         <div class="num">3</div>
         <h3>Transmission et suivi</h3>
-        <p>Après validation, le service prépare le format Factur-X, le transmet via la plateforme partenaire configurée pour votre compte et synchronise les statuts. Les factures reçues sont récupérées dans l'application.</p>
+        <p>Après la validation manuelle finale, le service prépare le format Factur-X, le transmet via la plateforme partenaire configurée pour votre compte et synchronise les statuts. Les factures reçues sont récupérées dans l'application.</p>
       </div>
     </div>
+    <div class="encart vert marge">
+      <strong>Transfert et validation :</strong> Le PDF est transféré automatiquement à FactuSerein pour analyse. La transmission finale de la facture reste toujours validée manuellement par vous.
+    </div>
     <p class="marge"><a href="comment-ca-marche.html">Voir le détail : formats acceptés, sécurité, e-reporting →</a></p>
+  </div>
+</section>
+
+<section class="section" id="documents">
+  <div class="container">
+    <p class="eyebrow">Fonctionnalités de facturation</p>
+    <h2>Factures, avoirs et cas courants gérés dans le même parcours</h2>
+    <p class="sous-titre">FactuSerein prépare les documents et les données utiles au contrôle avant transmission via la plateforme partenaire du compte.</p>
+    <div class="grille grille-2">
+      <div class="carte">
+        <h3>Documents et ajustements</h3>
+        <ul>
+          <li>Factures et factures fournisseurs</li>
+          <li>Avoirs et factures correctives, avec référence du document d'origine</li>
+          <li>Acomptes et soldes</li>
+          <li>Promotions et remises, au niveau d'une ligne ou du document</li>
+          <li>Frais et autres lignes de facturation</li>
+        </ul>
+      </div>
+      <div class="carte">
+        <h3>Données structurées et adresses</h3>
+        <ul>
+          <li>Données CII intégrées au document Factur-X préparé</li>
+          <li>Adresses de livraison distinctes de l'adresse du client</li>
+          <li>Totaux HT, TVA et TTC recalculés et écarts signalés</li>
+          <li>Références, identifiants et statuts contrôlés avant le circuit de transmission</li>
+        </ul>
+      </div>
+    </div>
+    <p class="entretien marge">Le résultat dépend des informations présentes dans le PDF et de la configuration du compte. Le périmètre B2C et international n'est pas inclus dans la version actuelle.</p>
   </div>
 </section>
 
 <section class="section" id="ereporting">
   <div class="container">
     <p class="eyebrow">Option selon votre activité</p>
-    <h2>E-reporting de paiement : une option ciblée</h2>
-    <p class="sous-titre">Le parcours principal de FactuSerein reste la préparation, la transmission et le suivi des factures B2B France. Pour certaines prestations de services et certains acomptes soumis à la TVA à l'encaissement, vous pouvez activer une saisie séparée des encaissements dans l'application.</p>
+    <h2>E-reporting d'encaissements : une option selon votre activité</h2>
+    <p class="sous-titre">Le parcours principal de FactuSerein reste la préparation, la transmission et le suivi des factures B2B France. Selon votre activité et votre régime de TVA, une saisie séparée des encaissements peut être proposée pour certains services ou acomptes.</p>
     <div class="grille grille-2 marge">
       <div class="carte">
-        <h3>Une activation explicite</h3>
+        <h3>Une activation au cas par cas</h3>
         <ul>
           <li>Activité de services ou mixte et régime de TVA confirmé.</li>
           <li>Activation depuis « Réglages » dans l'application Windows.</li>
@@ -269,8 +302,8 @@
         <p>Si votre logiciel ne prend pas en charge le parcours attendu, vous pouvez garder votre outil : vous déposez vos factures, puis vous vérifiez les données préparées avant transmission. Le rôle exact de chaque solution et de la plateforme partenaire doit être confirmé selon votre configuration.</p>
       </details>
       <details>
-        <summary>Les avoirs, remises et promotions sont-ils gérés ?</summary>
-        <p>Oui, le parcours prévoit les factures d'avoir avec référence de la facture d'origine, ainsi que les remises et frais au niveau d'une ligne ou du document. Le logiciel recalcule le HT, la TVA et le TTC ; si les montants ou la référence ne correspondent pas, la facture reste à corriger avant transmission.</p>
+        <summary>Quels documents et éléments de facturation sont gérés ?</summary>
+        <p>Le parcours gère les factures, avoirs, factures correctives, acomptes, promotions et remises, ainsi que les frais. Il prépare aussi les données structurées CII dans le document Factur-X et distingue l'adresse du client de l'adresse de livraison. Les totaux HT, TVA et TTC sont contrôlés ; si une donnée ou une référence ne correspond pas, la facture reste à corriger avant transmission.</p>
       </details>
       <details>
         <summary>Quelle différence entre l'adresse du client et l'adresse de livraison ?</summary>
@@ -281,8 +314,8 @@
         <p>Le service vérifie la structure XML CII, les parties émetteur et destinataire, les identifiants, les dates, les lignes, les catégories de TVA, les totaux et les références utiles. Un rapport de pré-contrôle de la plateforme est demandé avant transmission quand il est disponible pour votre compte.</p>
       </details>
       <details>
-        <summary>L'e-reporting de paiement concerne-t-il toutes les entreprises ?</summary>
-        <p>Non. Le module FactuSerein vise certaines prestations de services et certains acomptes lorsque la TVA est exigible à l'encaissement. Il est désactivé par défaut et s'active dans l'application après confirmation de votre situation. Cette activation est facultative dans le logiciel, mais elle ne supprime pas une obligation réglementaire si votre entreprise est concernée. Dans cette version, le produit reste limité au B2B France : les ventes B2C et les opérations internationales ne sont pas gérées.</p>
+        <summary>L'e-reporting d'encaissements concerne-t-il toutes les entreprises ?</summary>
+        <p>Non. Le module d'e-reporting d'encaissements peut concerner certaines prestations de services et certains acomptes lorsque la TVA est exigible à l'encaissement. Il est désactivé par défaut et s'active dans l'application après confirmation de votre situation. Cette activation est facultative dans le logiciel, mais elle ne supprime pas une obligation réglementaire si votre entreprise est concernée. Dans cette version, le produit reste limité au B2B France : les ventes B2C et les opérations internationales ne sont pas gérées.</p>
       </details>
       <details>
         <summary>Dois-je transmettre mes coordonnées bancaires ?</summary>
@@ -411,7 +444,7 @@
     {"@type": "Question", "name": "Pourquoi Windows affiche-t-il parfois un avertissement SmartScreen ?", "acceptedAnswer": {"@type": "Answer", "text": "Lors des premières versions, Windows peut afficher une application non reconnue lorsque la signature de l'éditeur ou la réputation du fichier n'est pas encore établie. La signature de l'éditeur et le parcours de publication Microsoft sont en cours : cette version n'est pas présentée comme déjà certifiée par Microsoft. Téléchargez l'installeur depuis la page officielle, vérifiez son empreinte SHA-256 et ne désactivez pas SmartScreen."}},
     {"@type": "Question", "name": "Puis-je résilier quand je veux ?", "acceptedAnswer": {"@type": "Answer", "text": "Formule mensuelle : oui, à tout moment (mois en cours dû). Formule annuelle : Remboursement sous 14 jours si le compte n'est pas activé, puis engagement jusqu'au terme de l'année (1 mois offert)."}},
     {"@type": "Question", "name": "Mes factures restent-elles confidentielles ?", "acceptedAnswer": {"@type": "Answer", "text": "Oui. Vos fichiers sont chiffrés en transit et traités uniquement pour la préparation, la transmission et le suivi de vos factures."}},
-    {"@type": "Question", "name": "L'e-reporting de paiement concerne-t-il toutes les entreprises ?", "acceptedAnswer": {"@type": "Answer", "text": "Non. Le module FactuSerein vise certaines prestations de services et certains acomptes lorsque la TVA est exigible à l'encaissement. Il est désactivé par défaut. Son activation est facultative dans le logiciel, mais une obligation réglementaire reste applicable si l'entreprise est concernée. Dans cette version, le produit reste limité au B2B France : les ventes B2C et les opérations internationales ne sont pas gérées."}},
+    {"@type": "Question", "name": "L'e-reporting d'encaissements concerne-t-il toutes les entreprises ?", "acceptedAnswer": {"@type": "Answer", "text": "Non. Le module d'e-reporting d'encaissements peut concerner certaines prestations de services et certains acomptes lorsque la TVA est exigible à l'encaissement. Il est désactivé par défaut. Son activation est facultative dans le logiciel, mais une obligation réglementaire reste applicable si l'entreprise est concernée. Dans cette version, le produit reste limité au B2B France : les ventes B2C et les opérations internationales ne sont pas gérées."}},
     {"@type": "Question", "name": "Dois-je transmettre mes coordonnées bancaires ?", "acceptedAnswer": {"@type": "Answer", "text": "Non. L'application demande uniquement la date et le montant de l'encaissement, avec une ventilation de TVA si nécessaire ; elle ne collecte ni IBAN ni relevé bancaire."}}
   ]
 }
